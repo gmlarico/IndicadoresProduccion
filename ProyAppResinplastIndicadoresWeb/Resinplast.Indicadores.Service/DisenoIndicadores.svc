@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="VB" Debug="true" Service="Resinplast.Indicadores.Implementation.Service.DiseñoIndicadores" CodeBehind="DiseñoIndicadores.svc.vb" %>

@@ -1,0 +1,146 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Resinplast.Indicadores.Wrapper
+</name>
+</assembly>
+<members>
+<member name="T:Resinplast.Indicadores.Wrapper.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Wrapper.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Wrapper.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="F:Resinplast.Indicadores.Wrapper.BaseEL.nFlagEstado">
+ <summary>
+ Estado de registro
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Resinplast.Indicadores.Wrapper.BaseEL.sUsuarioCreacion">
+ <summary>
+ Usuarion creacion
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Resinplast.Indicadores.Wrapper.BaseEL.fFechaCreacion">
+ <summary>
+ Fecha Creacion
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Resinplast.Indicadores.Wrapper.BaseEL.fUsuarioModificacion">
+ <summary>
+ Usuario Modificacion
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Resinplast.Indicadores.Wrapper.BaseEL.fFechaModificacion">
+ <summary>
+ Fecha modificacion
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Resinplast.Indicadores.Wrapper.BaseEL.fUsuarioEliminacion">
+ <summary>
+ Usuario Eliminacion
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Resinplast.Indicadores.Wrapper.BaseEL.fFechaEliminacion">
+ <summary>
+ Usuario Eliminacion
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Resinplast.Indicadores.Wrapper.BaseRequest.nFlagEstado">
+ <summary>
+ Estado de registro
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Resinplast.Indicadores.Wrapper.BaseRequest.sUsuarioCreacion">
+ <summary>
+ Usuarion creacion
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Resinplast.Indicadores.Wrapper.BaseRequest.fFechaCreacion">
+ <summary>
+ Fecha Creacion
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Resinplast.Indicadores.Wrapper.BaseRequest.fUsuarioModificacion">
+ <summary>
+ Usuario Modificacion
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Resinplast.Indicadores.Wrapper.BaseRequest.fFechaModificacion">
+ <summary>
+ Fecha modificacion
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Resinplast.Indicadores.Wrapper.BaseRequest.fUsuarioEliminacion">
+ <summary>
+ Usuario Eliminacion
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Resinplast.Indicadores.Wrapper.BaseRequest.fFechaEliminacion">
+ <summary>
+ Usuario Eliminacion
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Resinplast.Indicadores.Wrapper.BaseResponse.CodigoError">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Resinplast.Indicadores.Wrapper.BaseResponse.DescripcionError">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Resinplast.Indicadores.Wrapper.BaseResponse.ListaError">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Resinplast.Indicadores.Wrapper.DiseñoIndicadoresAperturaResponse.ListaIndicadorAperturasDia">
+ <summary>
+ 
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Resinplast.Indicadores.Wrapper.DiseñoIndicadoresPreprensasResponse.ListaIndicadorPreprensasDia">
+ <summary>
+ 
+ </summary>
+ <returns></returns>
+</member>
+</members>
+</doc>

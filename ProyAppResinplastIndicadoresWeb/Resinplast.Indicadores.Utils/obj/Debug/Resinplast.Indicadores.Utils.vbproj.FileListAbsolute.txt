@@ -1,0 +1,15 @@
+C:\Users\GLARICO\Documents\Visual Studio 2015\Projects\ProyAppResinplastIndicadoresWeb\Resinplast.Indicadores.Utils\bin\Debug\Resinplast.Indicadores.Utils.dll
+C:\Users\GLARICO\Documents\Visual Studio 2015\Projects\ProyAppResinplastIndicadoresWeb\Resinplast.Indicadores.Utils\bin\Debug\Resinplast.Indicadores.Utils.pdb
+C:\Users\GLARICO\Documents\Visual Studio 2015\Projects\ProyAppResinplastIndicadoresWeb\Resinplast.Indicadores.Utils\bin\Debug\Resinplast.Indicadores.Utils.xml
+C:\Users\GLARICO\Documents\Visual Studio 2015\Projects\ProyAppResinplastIndicadoresWeb\Resinplast.Indicadores.Utils\bin\Debug\Resinplast.Indicadores.Wrapper.dll
+C:\Users\GLARICO\Documents\Visual Studio 2015\Projects\ProyAppResinplastIndicadoresWeb\Resinplast.Indicadores.Utils\bin\Debug\System.Net.Http.dll
+C:\Users\GLARICO\Documents\Visual Studio 2015\Projects\ProyAppResinplastIndicadoresWeb\Resinplast.Indicadores.Utils\bin\Debug\Resinplast.Indicadores.Wrapper.pdb
+C:\Users\GLARICO\Documents\Visual Studio 2015\Projects\ProyAppResinplastIndicadoresWeb\Resinplast.Indicadores.Utils\bin\Debug\Resinplast.Indicadores.Wrapper.xml
+C:\Users\GLARICO\Documents\Visual Studio 2015\Projects\ProyAppResinplastIndicadoresWeb\Resinplast.Indicadores.Utils\bin\Debug\System.Net.Http.xml
+C:\Users\GLARICO\Documents\Visual Studio 2015\Projects\ProyAppResinplastIndicadoresWeb\Resinplast.Indicadores.Utils\bin\Debug\es\System.Net.Http.resources.dll
+C:\Users\GLARICO\Documents\Visual Studio 2015\Projects\ProyAppResinplastIndicadoresWeb\Resinplast.Indicadores.Utils\obj\Debug\Resinplast.Indicadores.Utils.vbprojResolveAssemblyReference.cache
+C:\Users\GLARICO\Documents\Visual Studio 2015\Projects\ProyAppResinplastIndicadoresWeb\Resinplast.Indicadores.Utils\obj\Debug\Resinplast.Indicadores.Utils.Resources.resources
+C:\Users\GLARICO\Documents\Visual Studio 2015\Projects\ProyAppResinplastIndicadoresWeb\Resinplast.Indicadores.Utils\obj\Debug\Resinplast.Indicadores.Utils.vbproj.GenerateResource.Cache
+C:\Users\GLARICO\Documents\Visual Studio 2015\Projects\ProyAppResinplastIndicadoresWeb\Resinplast.Indicadores.Utils\obj\Debug\Resinplast.Indicadores.Utils.dll
+C:\Users\GLARICO\Documents\Visual Studio 2015\Projects\ProyAppResinplastIndicadoresWeb\Resinplast.Indicadores.Utils\obj\Debug\Resinplast.Indicadores.Utils.xml
+C:\Users\GLARICO\Documents\Visual Studio 2015\Projects\ProyAppResinplastIndicadoresWeb\Resinplast.Indicadores.Utils\obj\Debug\Resinplast.Indicadores.Utils.pdb

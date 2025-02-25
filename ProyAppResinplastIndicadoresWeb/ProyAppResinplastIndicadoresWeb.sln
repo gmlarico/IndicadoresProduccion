@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Presentation", "1. Presentation", "{45137752-35DD-4B03-88CD-F5B708ED7C67}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Distributed Services", "2. Distributed Services", "{6C23EF69-2820-4979-B2DE-919968D19F73}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Distributed Services Public", "3. Distributed Services Public", "{563CAE58-2BF1-4156-B139-D3C9CA266955}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Distributed Windows Services", "4. Distributed Windows Services", "{6CC85905-762D-4A44-8AC1-B6726E1673CC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. Domain", "5. Domain", "{6A521C47-A389-4CBA-9E01-503303CCF3E3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6. Infrastructure", "6. Infrastructure", "{FD48DA2D-3C02-4AEF-B5A2-39D8B4585EAE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{978E3C38-549E-42B5-91C4-6B5F0F4AB65F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Manager", "Manager", "{3AF6A547-71D8-41CC-BD35-C1B67BDBDB74}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Wrapper", "Wrapper", "{3FDCF391-CC08-4F55-911C-C65D5EC9EC85}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Resinplast.Indicadores.Wrapper", "Resinplast.Indicadores.Wrapper\Resinplast.Indicadores.Wrapper.vbproj", "{F0358504-DBD7-47EA-945E-9D8B614117F3}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Resinplast.Indicadores.Utils", "Resinplast.Indicadores.Utils\Resinplast.Indicadores.Utils.vbproj", "{A44C4D5C-BEDB-42FE-BDA9-4FBAA50AA94B}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Resinplast.Indicadores.Domain", "Resinplast.Indicadores.Domain\Resinplast.Indicadores.Domain.vbproj", "{67E64A2A-D213-41DF-B1D2-DE69BC9E51C8}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Resinplast.Indicadores.Implementation.Service", "Resinplast.Indicadores.Implementation.Service\Resinplast.Indicadores.Implementation.Service.vbproj", "{AD3A7FA4-B212-40DC-BD77-CFF0481C2832}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Resinplast.Indicadores.Service", "Resinplast.Indicadores.Service\Resinplast.Indicadores.Service.vbproj", "{B786231F-F582-4263-BC72-279C5C0AA676}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Resinplast.Indicadores.Web", "Resinplast.Indicadores.Web\Resinplast.Indicadores.Web.vbproj", "{D91B8D3D-8F60-4368-8E2F-9D3C8A12AEE9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B786231F-F582-4263-BC72-279C5C0AA676} = {B786231F-F582-4263-BC72-279C5C0AA676}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F0358504-DBD7-47EA-945E-9D8B614117F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0358504-DBD7-47EA-945E-9D8B614117F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0358504-DBD7-47EA-945E-9D8B614117F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0358504-DBD7-47EA-945E-9D8B614117F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A44C4D5C-BEDB-42FE-BDA9-4FBAA50AA94B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A44C4D5C-BEDB-42FE-BDA9-4FBAA50AA94B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A44C4D5C-BEDB-42FE-BDA9-4FBAA50AA94B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A44C4D5C-BEDB-42FE-BDA9-4FBAA50AA94B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67E64A2A-D213-41DF-B1D2-DE69BC9E51C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67E64A2A-D213-41DF-B1D2-DE69BC9E51C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67E64A2A-D213-41DF-B1D2-DE69BC9E51C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67E64A2A-D213-41DF-B1D2-DE69BC9E51C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD3A7FA4-B212-40DC-BD77-CFF0481C2832}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD3A7FA4-B212-40DC-BD77-CFF0481C2832}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD3A7FA4-B212-40DC-BD77-CFF0481C2832}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD3A7FA4-B212-40DC-BD77-CFF0481C2832}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B786231F-F582-4263-BC72-279C5C0AA676}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B786231F-F582-4263-BC72-279C5C0AA676}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B786231F-F582-4263-BC72-279C5C0AA676}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B786231F-F582-4263-BC72-279C5C0AA676}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D91B8D3D-8F60-4368-8E2F-9D3C8A12AEE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D91B8D3D-8F60-4368-8E2F-9D3C8A12AEE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D91B8D3D-8F60-4368-8E2F-9D3C8A12AEE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D91B8D3D-8F60-4368-8E2F-9D3C8A12AEE9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{978E3C38-549E-42B5-91C4-6B5F0F4AB65F} = {6A521C47-A389-4CBA-9E01-503303CCF3E3}
+		{3AF6A547-71D8-41CC-BD35-C1B67BDBDB74} = {6A521C47-A389-4CBA-9E01-503303CCF3E3}
+		{3FDCF391-CC08-4F55-911C-C65D5EC9EC85} = {6A521C47-A389-4CBA-9E01-503303CCF3E3}
+		{F0358504-DBD7-47EA-945E-9D8B614117F3} = {3FDCF391-CC08-4F55-911C-C65D5EC9EC85}
+		{A44C4D5C-BEDB-42FE-BDA9-4FBAA50AA94B} = {978E3C38-549E-42B5-91C4-6B5F0F4AB65F}
+		{67E64A2A-D213-41DF-B1D2-DE69BC9E51C8} = {3AF6A547-71D8-41CC-BD35-C1B67BDBDB74}
+		{AD3A7FA4-B212-40DC-BD77-CFF0481C2832} = {6C23EF69-2820-4979-B2DE-919968D19F73}
+		{B786231F-F582-4263-BC72-279C5C0AA676} = {6C23EF69-2820-4979-B2DE-919968D19F73}
+		{D91B8D3D-8F60-4368-8E2F-9D3C8A12AEE9} = {563CAE58-2BF1-4156-B139-D3C9CA266955}
+	EndGlobalSection
+EndGlobal

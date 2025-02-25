@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="urn:resinplast:Indicadores:ImpresionIndicadores" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ImpresionIndicadores" targetNamespace="urn:resinplast:Indicadores:ImpresionIndicadores" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="FechaCreacion" type="xs:dateTime" />
+      <xs:element name="FechaEliminacion" type="xs:dateTime" />
+      <xs:element name="FechaModificacion" type="xs:dateTime" />
+      <xs:element name="FlagEstado" type="xs:int" />
+      <xs:element name="UsuarioCreacion" type="xs:string" />
+      <xs:element name="UsuarioEliminacion" type="xs:string" />
+      <xs:element name="UsuarioModificacion" type="xs:string" />
+      <xs:element name="IdRecurso" type="xs:string" />
+      <xs:element name="Año" type="xs:string" />
+      <xs:element name="Mes" type="xs:string" />
+      <xs:element name="NumeroCambios" type="xs:double" />
+      <xs:element name="SetUpPromedio" type="xs:double" />
+      <xs:element name="SetUpObjetivo" type="xs:double" />
+      <xs:element name="HorasAcumuladas" type="xs:double" />
+      <xs:element name="SetUpPromedioHeptacromia" type="xs:double" />
+      <xs:element name="SetUpObjetivoHeptacromia" type="xs:double" />
+      <xs:element name="SetUpPromedioSinHeptacromia" type="xs:double" />
+      <xs:element name="SetUpObjetivoSinHeptacromia" type="xs:double" />
+      <xs:element name="TipoRecurso" type="xs:string" />
+      <xs:element name="DescripcionFecha" type="xs:string" />
+      <xs:element name="BuscarFechaInicio" type="xs:dateTime" />
+      <xs:element name="BuscarFechaFin" type="xs:dateTime" />
+      <xs:element name="CodigoError" type="xs:int" />
+      <xs:element name="DescripcionError" type="xs:string" />
+      <xs:element name="ListaError" type="ArrayOfBaseErrorEL" />
+      <xs:complexType name="ArrayOfBaseErrorEL">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="BaseErrorEL" nillable="true" type="BaseErrorEL" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="BaseErrorEL">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="Codigo" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Descripcion" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Parametros" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ListaIndicadoresSetUp" type="ArrayOfImpresionIndicadoresSetUpEL" />
+      <xs:complexType name="ArrayOfImpresionIndicadoresSetUpEL">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="ImpresionIndicadoresSetUpEL" nillable="true" type="ImpresionIndicadoresSetUpEL" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ImpresionIndicadoresSetUpEL">
+        <xs:complexContent mixed="false">
+          <xs:extension base="BaseEL">
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="1" name="IdRecurso" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="Año" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="Mes" type="xs:string" />
+              <xs:element minOccurs="1" maxOccurs="1" name="NumeroCambios" type="xs:double" />
+              <xs:element minOccurs="1" maxOccurs="1" name="SetUpPromedio" type="xs:double" />
+              <xs:element minOccurs="1" maxOccurs="1" name="SetUpObjetivo" type="xs:double" />
+              <xs:element minOccurs="1" maxOccurs="1" name="HorasAcumuladas" type="xs:double" />
+              <xs:element minOccurs="1" maxOccurs="1" name="SetUpPromedioHeptacromia" type="xs:double" />
+              <xs:element minOccurs="1" maxOccurs="1" name="SetUpObjetivoHeptacromia" type="xs:double" />
+              <xs:element minOccurs="1" maxOccurs="1" name="SetUpPromedioSinHeptacromia" type="xs:double" />
+              <xs:element minOccurs="1" maxOccurs="1" name="SetUpObjetivoSinHeptacromia" type="xs:double" />
+              <xs:element minOccurs="0" maxOccurs="1" name="TipoRecurso" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="DescripcionFecha" type="xs:string" />
+              <xs:element minOccurs="1" maxOccurs="1" name="BuscarFechaInicio" type="xs:dateTime" />
+              <xs:element minOccurs="1" maxOccurs="1" name="BuscarFechaFin" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="BaseEL">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="FlagEstado" type="xs:int" />
+          <xs:element minOccurs="0" maxOccurs="1" name="UsuarioCreacion" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="FechaCreacion" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="UsuarioModificacion" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="FechaModificacion" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="UsuarioEliminacion" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="FechaEliminacion" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ListaIndicadoresSetUpConHeptacromia" type="ArrayOfImpresionIndicadoresSetUpEL" />
+      <xs:element name="ListaIndicadoresSetUpSinHeptacromia" type="ArrayOfImpresionIndicadoresSetUpEL" />
+      <xs:element name="ProduccionMetrosMiles" type="xs:double" />
+      <xs:element name="MetrosObjetivos" type="xs:double" />
+      <xs:element name="MetrosCumplidos" type="xs:double" />
+      <xs:element name="ListaProduccionMetros" type="ArrayOfImpresionIndicadoresMetrosEL" />
+      <xs:complexType name="ArrayOfImpresionIndicadoresMetrosEL">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="ImpresionIndicadoresMetrosEL" nillable="true" type="ImpresionIndicadoresMetrosEL" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ImpresionIndicadoresMetrosEL">
+        <xs:complexContent mixed="false">
+          <xs:extension base="BaseEL">
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="1" name="IdRecurso" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="Año" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="Mes" type="xs:string" />
+              <xs:element minOccurs="1" maxOccurs="1" name="ProduccionMetrosMiles" type="xs:double" />
+              <xs:element minOccurs="1" maxOccurs="1" name="MetrosObjetivos" type="xs:double" />
+              <xs:element minOccurs="1" maxOccurs="1" name="MetrosCumplidos" type="xs:double" />
+              <xs:element minOccurs="0" maxOccurs="1" name="TipoRecurso" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="DescripcionFecha" type="xs:string" />
+              <xs:element minOccurs="1" maxOccurs="1" name="BuscarFechaInicio" type="xs:dateTime" />
+              <xs:element minOccurs="1" maxOccurs="1" name="BuscarFechaFin" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="SumaKilosScrap" type="xs:double" />
+      <xs:element name="SumaKilosProduccion" type="xs:double" />
+      <xs:element name="SumaKilosRegulacion" type="xs:double" />
+      <xs:element name="MermaObjetivo" type="xs:double" />
+      <xs:element name="MermaResultante" type="xs:double" />
+      <xs:element name="ListaProduccionScrap" type="ArrayOfImpresionIndicadoresScrapEL" />
+      <xs:complexType name="ArrayOfImpresionIndicadoresScrapEL">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="ImpresionIndicadoresScrapEL" nillable="true" type="ImpresionIndicadoresScrapEL" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ImpresionIndicadoresScrapEL">
+        <xs:complexContent mixed="false">
+          <xs:extension base="BaseEL">
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="1" name="IdRecurso" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="Año" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="Mes" type="xs:string" />
+              <xs:element minOccurs="1" maxOccurs="1" name="SumaKilosScrap" type="xs:double" />
+              <xs:element minOccurs="1" maxOccurs="1" name="SumaKilosProduccion" type="xs:double" />
+              <xs:element minOccurs="1" maxOccurs="1" name="SumaKilosRegulacion" type="xs:double" />
+              <xs:element minOccurs="1" maxOccurs="1" name="MermaObjetivo" type="xs:double" />
+              <xs:element minOccurs="1" maxOccurs="1" name="MermaResultante" type="xs:double" />
+              <xs:element minOccurs="0" maxOccurs="1" name="TipoRecurso" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="DescripcionFecha" type="xs:string" />
+              <xs:element minOccurs="1" maxOccurs="1" name="BuscarFechaInicio" type="xs:dateTime" />
+              <xs:element minOccurs="1" maxOccurs="1" name="BuscarFechaFin" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="SumaMetros" type="xs:double" />
+      <xs:element name="SumaHoras" type="xs:double" />
+      <xs:element name="VelocidadTotal" type="xs:double" />
+      <xs:element name="VelocidadEfectiva" type="xs:double" />
+      <xs:element name="VelocidadObjetivo" type="xs:double" />
+      <xs:element name="ListaIndicadoresVelocidad" type="ArrayOfImpresionIndicadoresVelocidadEL" />
+      <xs:complexType name="ArrayOfImpresionIndicadoresVelocidadEL">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="ImpresionIndicadoresVelocidadEL" nillable="true" type="ImpresionIndicadoresVelocidadEL" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ImpresionIndicadoresVelocidadEL">
+        <xs:complexContent mixed="false">
+          <xs:extension base="BaseEL">
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="1" name="IdRecurso" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="Año" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="Mes" type="xs:string" />
+              <xs:element minOccurs="1" maxOccurs="1" name="SumaMetros" type="xs:double" />
+              <xs:element minOccurs="1" maxOccurs="1" name="SumaHoras" type="xs:double" />
+              <xs:element minOccurs="1" maxOccurs="1" name="VelocidadTotal" type="xs:double" />
+              <xs:element minOccurs="1" maxOccurs="1" name="VelocidadEfectiva" type="xs:double" />
+              <xs:element minOccurs="1" maxOccurs="1" name="VelocidadObjetivo" type="xs:double" />
+              <xs:element minOccurs="0" maxOccurs="1" name="TipoRecurso" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="DescripcionFecha" type="xs:string" />
+              <xs:element minOccurs="1" maxOccurs="1" name="BuscarFechaInicio" type="xs:dateTime" />
+              <xs:element minOccurs="1" maxOccurs="1" name="BuscarFechaFin" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="ImpresionIndicadoresSetUpRequest">
+    <wsdl:part name="FechaCreacion" element="FechaCreacion" />
+    <wsdl:part name="FechaEliminacion" element="FechaEliminacion" />
+    <wsdl:part name="FechaModificacion" element="FechaModificacion" />
+    <wsdl:part name="FlagEstado" element="FlagEstado" />
+    <wsdl:part name="UsuarioCreacion" element="UsuarioCreacion" />
+    <wsdl:part name="UsuarioEliminacion" element="UsuarioEliminacion" />
+    <wsdl:part name="UsuarioModificacion" element="UsuarioModificacion" />
+    <wsdl:part name="IdRecurso" element="IdRecurso" />
+    <wsdl:part name="Año" element="Año" />
+    <wsdl:part name="Mes" element="Mes" />
+    <wsdl:part name="NumeroCambios" element="NumeroCambios" />
+    <wsdl:part name="SetUpPromedio" element="SetUpPromedio" />
+    <wsdl:part name="SetUpObjetivo" element="SetUpObjetivo" />
+    <wsdl:part name="HorasAcumuladas" element="HorasAcumuladas" />
+    <wsdl:part name="SetUpPromedioHeptacromia" element="SetUpPromedioHeptacromia" />
+    <wsdl:part name="SetUpObjetivoHeptacromia" element="SetUpObjetivoHeptacromia" />
+    <wsdl:part name="SetUpPromedioSinHeptacromia" element="SetUpPromedioSinHeptacromia" />
+    <wsdl:part name="SetUpObjetivoSinHeptacromia" element="SetUpObjetivoSinHeptacromia" />
+    <wsdl:part name="TipoRecurso" element="TipoRecurso" />
+    <wsdl:part name="DescripcionFecha" element="DescripcionFecha" />
+    <wsdl:part name="BuscarFechaInicio" element="BuscarFechaInicio" />
+    <wsdl:part name="BuscarFechaFin" element="BuscarFechaFin" />
+  </wsdl:message>
+  <wsdl:message name="ImpresionIndicadoresSetUpResponse">
+    <wsdl:part name="CodigoError" element="CodigoError" />
+    <wsdl:part name="DescripcionError" element="DescripcionError" />
+    <wsdl:part name="ListaError" element="ListaError" />
+    <wsdl:part name="ListaIndicadoresSetUp" element="ListaIndicadoresSetUp" />
+    <wsdl:part name="ListaIndicadoresSetUpConHeptacromia" element="ListaIndicadoresSetUpConHeptacromia" />
+    <wsdl:part name="ListaIndicadoresSetUpSinHeptacromia" element="ListaIndicadoresSetUpSinHeptacromia" />
+  </wsdl:message>
+  <wsdl:message name="ImpresionIndicadoresMetrosRequest">
+    <wsdl:part name="FechaCreacion" element="FechaCreacion" />
+    <wsdl:part name="FechaEliminacion" element="FechaEliminacion" />
+    <wsdl:part name="FechaModificacion" element="FechaModificacion" />
+    <wsdl:part name="FlagEstado" element="FlagEstado" />
+    <wsdl:part name="UsuarioCreacion" element="UsuarioCreacion" />
+    <wsdl:part name="UsuarioEliminacion" element="UsuarioEliminacion" />
+    <wsdl:part name="UsuarioModificacion" element="UsuarioModificacion" />
+    <wsdl:part name="IdRecurso" element="IdRecurso" />
+    <wsdl:part name="Año" element="Año" />
+    <wsdl:part name="Mes" element="Mes" />
+    <wsdl:part name="ProduccionMetrosMiles" element="ProduccionMetrosMiles" />
+    <wsdl:part name="MetrosObjetivos" element="MetrosObjetivos" />
+    <wsdl:part name="MetrosCumplidos" element="MetrosCumplidos" />
+    <wsdl:part name="TipoRecurso" element="TipoRecurso" />
+    <wsdl:part name="DescripcionFecha" element="DescripcionFecha" />
+    <wsdl:part name="BuscarFechaInicio" element="BuscarFechaInicio" />
+    <wsdl:part name="BuscarFechaFin" element="BuscarFechaFin" />
+  </wsdl:message>
+  <wsdl:message name="ImpresionIndicadoresMetrosResponse">
+    <wsdl:part name="CodigoError" element="CodigoError" />
+    <wsdl:part name="DescripcionError" element="DescripcionError" />
+    <wsdl:part name="ListaError" element="ListaError" />
+    <wsdl:part name="ListaProduccionMetros" element="ListaProduccionMetros" />
+  </wsdl:message>
+  <wsdl:message name="ImpresionIndicadoresScrapRequest">
+    <wsdl:part name="FechaCreacion" element="FechaCreacion" />
+    <wsdl:part name="FechaEliminacion" element="FechaEliminacion" />
+    <wsdl:part name="FechaModificacion" element="FechaModificacion" />
+    <wsdl:part name="FlagEstado" element="FlagEstado" />
+    <wsdl:part name="UsuarioCreacion" element="UsuarioCreacion" />
+    <wsdl:part name="UsuarioEliminacion" element="UsuarioEliminacion" />
+    <wsdl:part name="UsuarioModificacion" element="UsuarioModificacion" />
+    <wsdl:part name="IdRecurso" element="IdRecurso" />
+    <wsdl:part name="Año" element="Año" />
+    <wsdl:part name="Mes" element="Mes" />
+    <wsdl:part name="SumaKilosScrap" element="SumaKilosScrap" />
+    <wsdl:part name="SumaKilosProduccion" element="SumaKilosProduccion" />
+    <wsdl:part name="SumaKilosRegulacion" element="SumaKilosRegulacion" />
+    <wsdl:part name="MermaObjetivo" element="MermaObjetivo" />
+    <wsdl:part name="MermaResultante" element="MermaResultante" />
+    <wsdl:part name="TipoRecurso" element="TipoRecurso" />
+    <wsdl:part name="DescripcionFecha" element="DescripcionFecha" />
+    <wsdl:part name="BuscarFechaInicio" element="BuscarFechaInicio" />
+    <wsdl:part name="BuscarFechaFin" element="BuscarFechaFin" />
+  </wsdl:message>
+  <wsdl:message name="ImpresionIndicadoresScrapResponse">
+    <wsdl:part name="CodigoError" element="CodigoError" />
+    <wsdl:part name="DescripcionError" element="DescripcionError" />
+    <wsdl:part name="ListaError" element="ListaError" />
+    <wsdl:part name="ListaProduccionScrap" element="ListaProduccionScrap" />
+  </wsdl:message>
+  <wsdl:message name="ImpresionIndicadoresVelocidadRequest">
+    <wsdl:part name="FechaCreacion" element="FechaCreacion" />
+    <wsdl:part name="FechaEliminacion" element="FechaEliminacion" />
+    <wsdl:part name="FechaModificacion" element="FechaModificacion" />
+    <wsdl:part name="FlagEstado" element="FlagEstado" />
+    <wsdl:part name="UsuarioCreacion" element="UsuarioCreacion" />
+    <wsdl:part name="UsuarioEliminacion" element="UsuarioEliminacion" />
+    <wsdl:part name="UsuarioModificacion" element="UsuarioModificacion" />
+    <wsdl:part name="IdRecurso" element="IdRecurso" />
+    <wsdl:part name="Año" element="Año" />
+    <wsdl:part name="Mes" element="Mes" />
+    <wsdl:part name="SumaMetros" element="SumaMetros" />
+    <wsdl:part name="SumaHoras" element="SumaHoras" />
+    <wsdl:part name="VelocidadTotal" element="VelocidadTotal" />
+    <wsdl:part name="VelocidadEfectiva" element="VelocidadEfectiva" />
+    <wsdl:part name="VelocidadObjetivo" element="VelocidadObjetivo" />
+    <wsdl:part name="TipoRecurso" element="TipoRecurso" />
+    <wsdl:part name="DescripcionFecha" element="DescripcionFecha" />
+    <wsdl:part name="BuscarFechaInicio" element="BuscarFechaInicio" />
+    <wsdl:part name="BuscarFechaFin" element="BuscarFechaFin" />
+  </wsdl:message>
+  <wsdl:message name="ImpresionIndicadoresVelocidadResponse">
+    <wsdl:part name="CodigoError" element="CodigoError" />
+    <wsdl:part name="DescripcionError" element="DescripcionError" />
+    <wsdl:part name="ListaError" element="ListaError" />
+    <wsdl:part name="ListaIndicadoresVelocidad" element="ListaIndicadoresVelocidad" />
+  </wsdl:message>
+  <wsdl:portType name="IImpresionIndicadores">
+    <wsdl:operation name="ListaIndicadoresSetUpIndividual">
+      <wsdl:input wsaw:Action="urn:resinplast:Indicadores:ImpresionIndicadores:ListaIndicadoresSetUpIndividual" name="ImpresionIndicadoresSetUpRequest" message="tns:ImpresionIndicadoresSetUpRequest" />
+      <wsdl:output wsaw:Action="" name="ImpresionIndicadoresSetUpResponse" message="tns:ImpresionIndicadoresSetUpResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="ListaIndicadoresSetUpTotal">
+      <wsdl:input wsaw:Action="urn:resinplast:Indicadores:ImpresionIndicadores:ListaIndicadoresSetUpTotal" name="ImpresionIndicadoresSetUpRequest" message="tns:ImpresionIndicadoresSetUpRequest" />
+      <wsdl:output wsaw:Action="" name="ImpresionIndicadoresSetUpResponse" message="tns:ImpresionIndicadoresSetUpResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="ListaIndicadoresSetUpConHeptacromia">
+      <wsdl:input wsaw:Action="urn:resinplast:Indicadores:ImpresionIndicadores:ListaIndicadoresSetUpConHeptacromia" name="ImpresionIndicadoresSetUpRequest" message="tns:ImpresionIndicadoresSetUpRequest" />
+      <wsdl:output wsaw:Action="" name="ImpresionIndicadoresSetUpResponse" message="tns:ImpresionIndicadoresSetUpResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="ListaIndicadoresSetUpSinHeptacromiaIndividual">
+      <wsdl:input wsaw:Action="urn:resinplast:Indicadores:ImpresionIndicadores:ListaIndicadoresSetUpSinHeptacromiaIndividual" name="ImpresionIndicadoresSetUpRequest" message="tns:ImpresionIndicadoresSetUpRequest" />
+      <wsdl:output wsaw:Action="" name="ImpresionIndicadoresSetUpResponse" message="tns:ImpresionIndicadoresSetUpResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="ListaIndicadoresSetUpSinHeptacromiaTotal">
+      <wsdl:input wsaw:Action="urn:resinplast:Indicadores:ImpresionIndicadores:ListaIndicadoresSetUpSinHeptacromiaTotal" name="ImpresionIndicadoresSetUpRequest" message="tns:ImpresionIndicadoresSetUpRequest" />
+      <wsdl:output wsaw:Action="" name="ImpresionIndicadoresSetUpResponse" message="tns:ImpresionIndicadoresSetUpResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="ListaIndicadoresMetrosIndividuales">
+      <wsdl:input wsaw:Action="urn:resinplast:Indicadores:ImpresionIndicadores:ListaIndicadoresMetrosIndividuales" name="ImpresionIndicadoresMetrosRequest" message="tns:ImpresionIndicadoresMetrosRequest" />
+      <wsdl:output wsaw:Action="" name="ImpresionIndicadoresMetrosResponse" message="tns:ImpresionIndicadoresMetrosResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="ListaIndicadoresMetrosTotales">
+      <wsdl:input wsaw:Action="urn:resinplast:Indicadores:ImpresionIndicadores:ListaIndicadoresMetrosTotales" name="ImpresionIndicadoresMetrosRequest" message="tns:ImpresionIndicadoresMetrosRequest" />
+      <wsdl:output wsaw:Action="" name="ImpresionIndicadoresMetrosResponse" message="tns:ImpresionIndicadoresMetrosResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="ListaIndicadoresScrapIndividuales">
+      <wsdl:input wsaw:Action="urn:resinplast:Indicadores:ImpresionIndicadores:ListaIndicadoresScrapIndividuales" name="ImpresionIndicadoresScrapRequest" message="tns:ImpresionIndicadoresScrapRequest" />
+      <wsdl:output wsaw:Action="" name="ImpresionIndicadoresScrapResponse" message="tns:ImpresionIndicadoresScrapResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="ListaIndicadoresScrapTotales">
+      <wsdl:input wsaw:Action="urn:resinplast:Indicadores:ImpresionIndicadores:ListaIndicadoresScrapTotales" name="ImpresionIndicadoresScrapRequest" message="tns:ImpresionIndicadoresScrapRequest" />
+      <wsdl:output wsaw:Action="" name="ImpresionIndicadoresScrapResponse" message="tns:ImpresionIndicadoresScrapResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="ListaIndicadoresVelocidadIndividuales">
+      <wsdl:input wsaw:Action="urn:resinplast:Indicadores:ImpresionIndicadores:ListaIndicadoresVelocidadIndividuales" name="ImpresionIndicadoresVelocidadRequest" message="tns:ImpresionIndicadoresVelocidadRequest" />
+      <wsdl:output wsaw:Action="" name="ImpresionIndicadoresVelocidadResponse" message="tns:ImpresionIndicadoresVelocidadResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="ListaIndicadoresVelocidadTotales">
+      <wsdl:input wsaw:Action="urn:resinplast:Indicadores:ImpresionIndicadores:ListaIndicadoresVelocidadTotales" name="ImpresionIndicadoresVelocidadRequest" message="tns:ImpresionIndicadoresVelocidadRequest" />
+      <wsdl:output wsaw:Action="" name="ImpresionIndicadoresVelocidadResponse" message="tns:ImpresionIndicadoresVelocidadResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IImpresionIndicadores" type="tns:IImpresionIndicadores">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListaIndicadoresSetUpIndividual">
+      <soap:operation soapAction="urn:resinplast:Indicadores:ImpresionIndicadores:ListaIndicadoresSetUpIndividual" style="document" />
+      <wsdl:input name="ImpresionIndicadoresSetUpRequest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ImpresionIndicadoresSetUpResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaIndicadoresSetUpTotal">
+      <soap:operation soapAction="urn:resinplast:Indicadores:ImpresionIndicadores:ListaIndicadoresSetUpTotal" style="document" />
+      <wsdl:input name="ImpresionIndicadoresSetUpRequest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ImpresionIndicadoresSetUpResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaIndicadoresSetUpConHeptacromia">
+      <soap:operation soapAction="urn:resinplast:Indicadores:ImpresionIndicadores:ListaIndicadoresSetUpConHeptacromia" style="document" />
+      <wsdl:input name="ImpresionIndicadoresSetUpRequest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ImpresionIndicadoresSetUpResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaIndicadoresSetUpSinHeptacromiaIndividual">
+      <soap:operation soapAction="urn:resinplast:Indicadores:ImpresionIndicadores:ListaIndicadoresSetUpSinHeptacromiaIndividual" style="document" />
+      <wsdl:input name="ImpresionIndicadoresSetUpRequest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ImpresionIndicadoresSetUpResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaIndicadoresSetUpSinHeptacromiaTotal">
+      <soap:operation soapAction="urn:resinplast:Indicadores:ImpresionIndicadores:ListaIndicadoresSetUpSinHeptacromiaTotal" style="document" />
+      <wsdl:input name="ImpresionIndicadoresSetUpRequest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ImpresionIndicadoresSetUpResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaIndicadoresMetrosIndividuales">
+      <soap:operation soapAction="urn:resinplast:Indicadores:ImpresionIndicadores:ListaIndicadoresMetrosIndividuales" style="document" />
+      <wsdl:input name="ImpresionIndicadoresMetrosRequest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ImpresionIndicadoresMetrosResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaIndicadoresMetrosTotales">
+      <soap:operation soapAction="urn:resinplast:Indicadores:ImpresionIndicadores:ListaIndicadoresMetrosTotales" style="document" />
+      <wsdl:input name="ImpresionIndicadoresMetrosRequest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ImpresionIndicadoresMetrosResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaIndicadoresScrapIndividuales">
+      <soap:operation soapAction="urn:resinplast:Indicadores:ImpresionIndicadores:ListaIndicadoresScrapIndividuales" style="document" />
+      <wsdl:input name="ImpresionIndicadoresScrapRequest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ImpresionIndicadoresScrapResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaIndicadoresScrapTotales">
+      <soap:operation soapAction="urn:resinplast:Indicadores:ImpresionIndicadores:ListaIndicadoresScrapTotales" style="document" />
+      <wsdl:input name="ImpresionIndicadoresScrapRequest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ImpresionIndicadoresScrapResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaIndicadoresVelocidadIndividuales">
+      <soap:operation soapAction="urn:resinplast:Indicadores:ImpresionIndicadores:ListaIndicadoresVelocidadIndividuales" style="document" />
+      <wsdl:input name="ImpresionIndicadoresVelocidadRequest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ImpresionIndicadoresVelocidadResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaIndicadoresVelocidadTotales">
+      <soap:operation soapAction="urn:resinplast:Indicadores:ImpresionIndicadores:ListaIndicadoresVelocidadTotales" style="document" />
+      <wsdl:input name="ImpresionIndicadoresVelocidadRequest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ImpresionIndicadoresVelocidadResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ImpresionIndicadores">
+    <wsdl:port name="BasicHttpBinding_IImpresionIndicadores" binding="tns:BasicHttpBinding_IImpresionIndicadores">
+      <soap:address location="http://localhost:27925/ImpresionIndicadores.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

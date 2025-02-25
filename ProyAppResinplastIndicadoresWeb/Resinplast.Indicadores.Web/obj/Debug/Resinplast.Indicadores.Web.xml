@@ -1,0 +1,1573 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Resinplast.Indicadores.Web
+</name>
+</assembly>
+<members>
+<member name="T:Resinplast.Indicadores.Web.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:Resinplast.Indicadores.Web.DisenoContext.ListarAperturasDia(Resinplast.Indicadores.Wrapper.DiseñoIndicadoresAperturaRequest)">
+ <summary>
+ Listar Aperturas Dia y detalle
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.DisenoContext.ListarAperturasSemana(Resinplast.Indicadores.Wrapper.DiseñoIndicadoresAperturaRequest)">
+ <summary>
+ Listar Aperturas Semana
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.DisenoContext.ListarAperturasCompletadasSemana(Resinplast.Indicadores.Wrapper.DiseñoIndicadoresAperturaRequest)">
+ <summary>
+ Listar Aperturas Completadas Semana
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.DisenoContext.ConsultarAperturasDiasDetalle2(Resinplast.Indicadores.Wrapper.DiseñoIndicadoresAperturaRequest)">
+ <summary>
+ Consultar Aperturas DiasDetalle 2
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.DisenoContext.ListarPrepensaDia(Resinplast.Indicadores.Wrapper.DiseñoIndicadoresPreprensasRequest)">
+ <summary>
+ Listar Prepensa Dia y detalle
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.DisenoContext.ListarPrepensaDiaPruebaColor(Resinplast.Indicadores.Wrapper.DiseñoIndicadoresPreprensasRequest)">
+ <summary>
+ Listar Prepensa Dia Prueba color
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.DisenoContext.ListarPreprensasSemana(Resinplast.Indicadores.Wrapper.DiseñoIndicadoresPreprensasRequest)">
+ <summary>
+ Listar Preprensas Semana
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.DisenoContext.ListarPreprensasCompletadasSemana(Resinplast.Indicadores.Wrapper.DiseñoIndicadoresPreprensasRequest)">
+ <summary>
+ Listar Preprensas Completadas Semana
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.DisenoContext.ConsultarPreprensaDiasDetalle2(Resinplast.Indicadores.Wrapper.DiseñoIndicadoresPreprensasRequest)">
+ <summary>
+ Consultar Preprensa Dias Detalle2
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.ImpresionContext.ListaIndicadoresSetUpTotal(Resinplast.Indicadores.Wrapper.ImpresionIndicadoresSetUpRequest)">
+ <summary>
+ Listar Aperturas Dia y detalle
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.ImpresionContext.ListaIndicadoresSetUpIndividual(Resinplast.Indicadores.Wrapper.ImpresionIndicadoresSetUpRequest)">
+ <summary>
+ Listar Aperturas Dia y detalle
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.ImpresionContext.ListaIndicadoresSetUpConHeptacromia(Resinplast.Indicadores.Wrapper.ImpresionIndicadoresSetUpRequest)">
+ <summary>
+ Listar Aperturas Dia y detalle
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.ImpresionContext.ListaIndicadoresSetUpSinHeptacromiaTotal(Resinplast.Indicadores.Wrapper.ImpresionIndicadoresSetUpRequest)">
+ <summary>
+ Listar Aperturas Dia y detalle
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.ImpresionContext.ListaIndicadoresSetUpSinHeptacromiaIndividual(Resinplast.Indicadores.Wrapper.ImpresionIndicadoresSetUpRequest)">
+ <summary>
+ Listar Aperturas Dia y detalle
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.ImpresionContext.ListaIndicadoresVelocidadTotales(Resinplast.Indicadores.Wrapper.ImpresionIndicadoresVelocidadRequest)">
+ <summary>
+ Listar Aperturas Dia y detalle
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.ImpresionContext.ListaIndicadoresVelocidadIndividuales(Resinplast.Indicadores.Wrapper.ImpresionIndicadoresVelocidadRequest)">
+ <summary>
+ Listar Aperturas Dia y detalle
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.ImpresionContext.ListaIndicadoresMetrosTotales(Resinplast.Indicadores.Wrapper.ImpresionIndicadoresMetrosRequest)">
+ <summary>
+ Listar Aperturas Dia y detalle
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.ImpresionContext.ListaIndicadoresMetrosIndividuales(Resinplast.Indicadores.Wrapper.ImpresionIndicadoresMetrosRequest)">
+ <summary>
+ Listar Aperturas Dia y detalle
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.ImpresionContext.ListaIndicadoresScrapTotales(Resinplast.Indicadores.Wrapper.ImpresionIndicadoresScrapRequest)">
+ <summary>
+ Listar Aperturas Dia y detalle
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.ImpresionContext.ListaIndicadoresScrapIndividuales(Resinplast.Indicadores.Wrapper.ImpresionIndicadoresScrapRequest)">
+ <summary>
+ Listar Aperturas Dia y detalle
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.Resinplast.Indicadores.Web.DisenoController.ListarAperturasDia(System.Collections.Generic.List{Resinplast.Indicadores.Wrapper.DiseñoIndicadoresAperturaRequest})">
+ <summary>
+ Lista Consultar
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.Resinplast.Indicadores.Web.DisenoController.ListarAperturasSemana(System.Collections.Generic.List{Resinplast.Indicadores.Wrapper.DiseñoIndicadoresAperturaRequest})">
+ <summary>
+ Lista Consultar
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.Resinplast.Indicadores.Web.DisenoController.ListarPreprensasSemana(System.Collections.Generic.List{Resinplast.Indicadores.Wrapper.DiseñoIndicadoresPreprensasRequest})">
+ <summary>
+ Lista Consultar
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.Resinplast.Indicadores.Web.DisenoController.ListarPrepensaDia(System.Collections.Generic.List{Resinplast.Indicadores.Wrapper.DiseñoIndicadoresPreprensasRequest})">
+ <summary>
+ Lista Consultar
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.Resinplast.Indicadores.Web.DisenoController.ListarPrepensaDiaPruebaColor(System.Collections.Generic.List{Resinplast.Indicadores.Wrapper.DiseñoIndicadoresPreprensasRequest})">
+ <summary>
+ Lista Consultar
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.Resinplast.Indicadores.Web.DisenoController.ConsultarAperturasDiasDetalle2(System.Collections.Generic.List{Resinplast.Indicadores.Wrapper.DiseñoIndicadoresAperturaRequest})">
+ <summary>
+ Lista Consultar
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.Resinplast.Indicadores.Web.DisenoController.ConsultarPreprensaDiasDetalle2(System.Collections.Generic.List{Resinplast.Indicadores.Wrapper.DiseñoIndicadoresPreprensasRequest})">
+ <summary>
+ Lista Consultar
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.Resinplast.Indicadores.Web.DisenoController.ListarAperturasCompletadasSemana(System.Collections.Generic.List{Resinplast.Indicadores.Wrapper.DiseñoIndicadoresAperturaRequest})">
+ <summary>
+ Lista Consultar
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.Resinplast.Indicadores.Web.DisenoController.ListarPreprensasCompletadasSemana(System.Collections.Generic.List{Resinplast.Indicadores.Wrapper.DiseñoIndicadoresPreprensasRequest})">
+ <summary>
+ Lista Consultar
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.Resinplast.Indicadores.Web.ErrorController.ErrorApplication">
+ <summary>
+ Muestra la vista de acceso no permitido
+ </summary>
+ <returns>Vista de acceso no autorizado de la opción</returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.Resinplast.Indicadores.Web.ErrorController.NotSession">
+ <summary>
+ 
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.Resinplast.Indicadores.Web.ErrorController.NotFound">
+ <summary>
+ 
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.Resinplast.Indicadores.Web.ErrorController.GatewayTimeout">
+ <summary>
+ 
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.Resinplast.Indicadores.Web.ImpresionController.ListaIndicadoresSetUpTotal(System.Collections.Generic.List{Resinplast.Indicadores.Wrapper.ImpresionIndicadoresSetUpRequest})">
+ <summary>
+ Lista Consultar
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.Resinplast.Indicadores.Web.ImpresionController.ListaIndicadoresSetUpIndividual(System.Collections.Generic.List{Resinplast.Indicadores.Wrapper.ImpresionIndicadoresSetUpRequest})">
+ <summary>
+ Lista Consultar
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.Resinplast.Indicadores.Web.ImpresionController.ListaIndicadoresSetUpConHeptacromia(System.Collections.Generic.List{Resinplast.Indicadores.Wrapper.ImpresionIndicadoresSetUpRequest})">
+ <summary>
+ Lista Consultar
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.Resinplast.Indicadores.Web.ImpresionController.ListaIndicadoresSetUpSinHeptacromiaTotal(System.Collections.Generic.List{Resinplast.Indicadores.Wrapper.ImpresionIndicadoresSetUpRequest})">
+ <summary>
+ Lista Consultar
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.Resinplast.Indicadores.Web.ImpresionController.ListaIndicadoresSetUpSinHeptacromiaIndividual(System.Collections.Generic.List{Resinplast.Indicadores.Wrapper.ImpresionIndicadoresSetUpRequest})">
+ <summary>
+ Lista Consultar
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.Resinplast.Indicadores.Web.ImpresionController.ListaIndicadoresVelocidadTotales(System.Collections.Generic.List{Resinplast.Indicadores.Wrapper.ImpresionIndicadoresVelocidadRequest})">
+ <summary>
+ Lista Consultar
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.Resinplast.Indicadores.Web.ImpresionController.ListaIndicadoresVelocidadIndividuales(System.Collections.Generic.List{Resinplast.Indicadores.Wrapper.ImpresionIndicadoresVelocidadRequest})">
+ <summary>
+ Lista Consultar
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.Resinplast.Indicadores.Web.ImpresionController.ListaIndicadoresMetrosTotales(System.Collections.Generic.List{Resinplast.Indicadores.Wrapper.ImpresionIndicadoresMetrosRequest})">
+ <summary>
+ Lista Consultar
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.Resinplast.Indicadores.Web.ImpresionController.ListaIndicadoresMetrosIndividuales(System.Collections.Generic.List{Resinplast.Indicadores.Wrapper.ImpresionIndicadoresMetrosRequest})">
+ <summary>
+ Lista Consultar
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.Resinplast.Indicadores.Web.ImpresionController.ListaIndicadoresScrapTotales(System.Collections.Generic.List{Resinplast.Indicadores.Wrapper.ImpresionIndicadoresScrapRequest})">
+ <summary>
+ Lista Consultar
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.Resinplast.Indicadores.Web.ImpresionController.ListaIndicadoresScrapIndividuales(System.Collections.Generic.List{Resinplast.Indicadores.Wrapper.ImpresionIndicadoresScrapRequest})">
+ <summary>
+ Lista Consultar
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+</member>
+<member name="M:Resinplast.Indicadores.Web.Resinplast.Indicadores.Web.LoginController.Validar(System.String,System.String)">
+ <summary>
+ Validr datos de autenticacion
+ </summary>
+ <param name="Usuario"></param>
+ <param name="Password"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Resinplast.Indicadores.Web.Resources.EventoResource">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.EventoResource.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.EventoResource.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:Resinplast.Indicadores.Web.Resources.GeneralResource">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.DictCancelUpload">
+<summary>
+  Looks up a localized string similar to Carga cancelada.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.DictCancelUploadConfirmation">
+<summary>
+  Looks up a localized string similar to Esta seguro de cancelar esta carga?.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.DictDefaultMessage">
+<summary>
+  Looks up a localized string similar to Arrastre archivos aquí para cargar.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.DictFallbackMessage">
+<summary>
+  Looks up a localized string similar to Su navegador no permite arrastras el archivo de carga.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.DictFallbackText">
+<summary>
+  Looks up a localized string similar to Utilice el formulario de reserva a continuación para cargar sus archivos como en los días anteriores..
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.DictFileTooBig">
+<summary>
+  Looks up a localized string similar to Archivo es muy grande ({{filesize}}MB). Máximo tamaño: {{maxFilesize}}MB.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.DictInvalidFileType">
+<summary>
+  Looks up a localized string similar to No puede cargar archivos de este tipo.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.DictMaxFilesExceeded">
+<summary>
+  Looks up a localized string similar to No puede cargar más archivos.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.DictRemoveFile">
+<summary>
+  Looks up a localized string similar to Remover archivo.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.DictRemoveFileConfirmation">
+<summary>
+  Looks up a localized string similar to .
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.DictResponseError">
+<summary>
+  Looks up a localized string similar to Servidor respondió con el código: {{statusCode}}.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaAbrirTooltip">
+<summary>
+  Looks up a localized string similar to Abrir.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaActivo">
+<summary>
+  Looks up a localized string similar to Activo.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaActivos">
+<summary>
+  Looks up a localized string similar to Activos.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaAgregar">
+<summary>
+  Looks up a localized string similar to Agregar.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaAgregarEnvios">
+<summary>
+  Looks up a localized string similar to Envio Nuevo.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaAnadir">
+<summary>
+  Looks up a localized string similar to Añadir.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaAnadirTooltip">
+<summary>
+  Looks up a localized string similar to Añadir Registro.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaAnterior">
+<summary>
+  Looks up a localized string similar to Anterior.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaAnular">
+<summary>
+  Looks up a localized string similar to Anular.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaAnularTooltip">
+<summary>
+  Looks up a localized string similar to Anular Registro.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaAsignarStageTooltip">
+<summary>
+  Looks up a localized string similar to Asignar Stage.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaAsnTooltip">
+<summary>
+  Looks up a localized string similar to ASN.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaAtenderTooltip">
+<summary>
+  Looks up a localized string similar to Atender.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaCambiarCuenta">
+<summary>
+  Looks up a localized string similar to Cambiar Cuenta.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaCancelarTooltip">
+<summary>
+  Looks up a localized string similar to Cancelar.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaCargarLpn">
+<summary>
+  Looks up a localized string similar to Cargar LPN.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaCentroDistribucion">
+<summary>
+  Looks up a localized string similar to Centro de Distribución.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaCerrarTooltip">
+<summary>
+  Looks up a localized string similar to Cerrar.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaCodigoBarra">
+<summary>
+  Looks up a localized string similar to Código de Barra.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaCodigoBarraEliminar">
+<summary>
+  Looks up a localized string similar to Eliminar Código de Barra.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaConfiguracionReabastoDestino">
+<summary>
+  Looks up a localized string similar to Configurar Destino.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaConfiguracionReabastoOrigen">
+<summary>
+  Looks up a localized string similar to Configurar Origen.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaConfirmar">
+<summary>
+  Looks up a localized string similar to Confirmar.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaConsultar">
+<summary>
+  Looks up a localized string similar to Consultar.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaContinuar">
+<summary>
+  Looks up a localized string similar to Continuar.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaContraseña">
+<summary>
+  Looks up a localized string similar to Cambiar contraseña.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaCorto">
+<summary>
+  Looks up a localized string similar to Corto.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaCortoCancelar">
+<summary>
+  Looks up a localized string similar to Cancelar Corto.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaCuenta">
+<summary>
+  Looks up a localized string similar to Cuenta.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaDepartamento">
+<summary>
+  Looks up a localized string similar to Departamento.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaDescargarLpn">
+<summary>
+  Looks up a localized string similar to Descargar LPN.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaDesconectar">
+<summary>
+  Looks up a localized string similar to Desconectar.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaDesde">
+<summary>
+  Looks up a localized string similar to Desde.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaDespacharTooltip">
+<summary>
+  Looks up a localized string similar to Despachar.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaDetalleAgregar">
+<summary>
+  Looks up a localized string similar to Agregar Detalle.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaDetalleEliminar">
+<summary>
+  Looks up a localized string similar to Eliminar Detalle.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaDetalleError">
+<summary>
+  Looks up a localized string similar to Detalle del Error:.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaDetalleReasignar">
+<summary>
+  Looks up a localized string similar to Reasignar.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaDetalleTooltip">
+<summary>
+  Looks up a localized string similar to Detalle.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaDireccionEditar">
+<summary>
+  Looks up a localized string similar to Editar Dirección.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaDireccionTooltip">
+<summary>
+  Looks up a localized string similar to Dirección.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaDistrito">
+<summary>
+  Looks up a localized string similar to Distrito.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaEditar">
+<summary>
+  Looks up a localized string similar to Editar.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaEditarDetalle">
+<summary>
+  Looks up a localized string similar to Editar Detalle.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaEditarTooltip">
+<summary>
+  Looks up a localized string similar to Editar Registro.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaEliminar">
+<summary>
+  Looks up a localized string similar to Eliminar.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaEliminarTooltip">
+<summary>
+  Looks up a localized string similar to Eliminar Registro.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaEnvioGenerar">
+<summary>
+  Looks up a localized string similar to Generar Envíos.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaEnvioTooltip">
+<summary>
+  Looks up a localized string similar to Envío.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaFilas">
+<summary>
+  Looks up a localized string similar to Filas.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaFilasPorPagina">
+<summary>
+  Looks up a localized string similar to Filas por Página.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaFiltros">
+<summary>
+  Looks up a localized string similar to Filtros.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaGenerar">
+<summary>
+  Looks up a localized string similar to Generar.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaGrabar">
+<summary>
+  Looks up a localized string similar to Grabar.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaHasta">
+<summary>
+  Looks up a localized string similar to Hasta.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaHuella">
+<summary>
+  Looks up a localized string similar to Huella.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaHuellaDetalle">
+<summary>
+  Looks up a localized string similar to Detalle Huella.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaHuellaEditar">
+<summary>
+  Looks up a localized string similar to Editar Huella.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaHuellaEliminar">
+<summary>
+  Looks up a localized string similar to Eliminar Huella.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaImprimir">
+<summary>
+  Looks up a localized string similar to Imprimir.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaInactivo">
+<summary>
+  Looks up a localized string similar to Inactivo.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaInactivos">
+<summary>
+  Looks up a localized string similar to Inactivos.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaLiberacion">
+<summary>
+  Looks up a localized string similar to Liberación.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaLimpiar">
+<summary>
+  Looks up a localized string similar to Limpiar.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaMargenDespacho">
+<summary>
+  Looks up a localized string similar to Margen Despacho.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaMargenDespachoEliminar">
+<summary>
+  Looks up a localized string similar to Margen Despacho Eliminar.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaNoUsa">
+<summary>
+  Looks up a localized string similar to No Usa.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaNuevo">
+<summary>
+  Looks up a localized string similar to Nuevo.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaNuevoConteo">
+<summary>
+  Looks up a localized string similar to Nuevo Conteo.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaPagina">
+<summary>
+  Looks up a localized string similar to Página.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaProvincia">
+<summary>
+  Looks up a localized string similar to Provincia.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaReasignar">
+<summary>
+  Looks up a localized string similar to Reasignar.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaRecepcionar">
+<summary>
+  Looks up a localized string similar to Recepcionar.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaReimprimir">
+<summary>
+  Looks up a localized string similar to Reimprimir.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaReporte">
+<summary>
+  Looks up a localized string similar to Reporte.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaReportesTooltip">
+<summary>
+  Looks up a localized string similar to Reportes.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaResultadosBusquedaVacia">
+<summary>
+  Looks up a localized string similar to No se encontraron registros para la búsqueda realizada..
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaSalir">
+<summary>
+  Looks up a localized string similar to Salir.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaSeleccionar">
+<summary>
+  Looks up a localized string similar to Seleccionar.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaSeleccionarDeseleccionarTodos">
+<summary>
+  Looks up a localized string similar to Seleccionar/Deseleccionar Todos.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaSeleccionarMotivos">
+<summary>
+  Looks up a localized string similar to Seleccionar Motivos.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaSeleccionarProveedor">
+<summary>
+  Looks up a localized string similar to Seleccionar Proveedor.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaSeleccionarRegistro">
+<summary>
+  Looks up a localized string similar to Seleccionar Registro.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaSeleccionTodos">
+<summary>
+  Looks up a localized string similar to Todos.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaSiguiente">
+<summary>
+  Looks up a localized string similar to Siguiente.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaSuspendidos">
+<summary>
+  Looks up a localized string similar to Suspendidos.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaTituloCargarLPN">
+<summary>
+  Looks up a localized string similar to Cargar LPN&apos;s.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaTodos">
+<summary>
+  Looks up a localized string similar to Todos.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaUbicacion">
+<summary>
+  Looks up a localized string similar to Ubicación.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaUnidadMedida">
+<summary>
+  Looks up a localized string similar to Unidad de Medida.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaUnidadMedidaEliminar">
+<summary>
+  Looks up a localized string similar to Eliminar Unidad de Medida.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaUsa">
+<summary>
+  Looks up a localized string similar to Usa.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaVerEnvios">
+<summary>
+  Looks up a localized string similar to Ver Envios.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.GeneralResource.EtiquetaVisualizar">
+<summary>
+  Looks up a localized string similar to Visualizar.
+</summary>
+</member>
+<member name="T:Resinplast.Indicadores.Web.Resources.MessageResource">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.MessageResource.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.MessageResource.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.MessageResource.Advertencia">
+<summary>
+  Looks up a localized string similar to Advertencia.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.MessageResource.Confirmacion">
+<summary>
+  Looks up a localized string similar to ¿Está seguro de realizar la acción?.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.MessageResource.ConfirmacionGuardar">
+<summary>
+  Looks up a localized string similar to ¿Está seguro de grabar los cambios solicitados?.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.MessageResource.EjecutoNingunProceso">
+<summary>
+  Looks up a localized string similar to No se ejecuto ningun proceso..
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.MessageResource.ErroralGrabar">
+<summary>
+  Looks up a localized string similar to Se produjo un error al grabar el registro..
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.MessageResource.ErrorCargarViewModel">
+<summary>
+  Looks up a localized string similar to Model de la Vista no definido.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.MessageResource.ErrorHoraFin">
+<summary>
+  Looks up a localized string similar to Debe ingresar la Hora Fin.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.MessageResource.ErrorHoraInicio">
+<summary>
+  Looks up a localized string similar to Debe ingresar la Hora Inicio.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.MessageResource.ErrorMessage">
+<summary>
+  Looks up a localized string similar to Oops....
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.MessageResource.Exito">
+<summary>
+  Looks up a localized string similar to Exito.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.MessageResource.HoraFin">
+<summary>
+  Looks up a localized string similar to Hora Fin.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.MessageResource.HoraInicio">
+<summary>
+  Looks up a localized string similar to Hora Inicio.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.MessageResource.Informacion">
+<summary>
+  Looks up a localized string similar to Información.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.MessageResource.NO">
+<summary>
+  Looks up a localized string similar to NO.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.MessageResource.RangoHoras">
+<summary>
+  Looks up a localized string similar to Rango de Horas.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.MessageResource.SeAnuloExito">
+<summary>
+  Looks up a localized string similar to Se anuló registro con éxito..
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.MessageResource.SeCanceloExito">
+<summary>
+  Looks up a localized string similar to Se canceló registro con éxito..
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.MessageResource.SeEliminoExito">
+<summary>
+  Looks up a localized string similar to Se eliminó registro con éxito..
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.MessageResource.SeGuardoInformacionExito">
+<summary>
+  Looks up a localized string similar to Se guardó la información con éxito..
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.MessageResource.SI">
+<summary>
+  Looks up a localized string similar to SI.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.MessageResource.ValidacionDebeIngresar">
+<summary>
+  Looks up a localized string similar to Por favor, debe ingresar.
+</summary>
+</member>
+<member name="T:Resinplast.Indicadores.Web.Resources.PizarraInternaResource">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.PizarraInternaResource.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Web.Resources.PizarraInternaResource.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:Resinplast.Indicadores.Web.DisenoIndicadoresService.BaseErrorEL">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.BaseErrorEL.Codigo">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.BaseErrorEL.Descripcion">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.BaseErrorEL.Parametros">
+<remarks/>
+</member>
+<member name="T:Resinplast.Indicadores.Web.DisenoIndicadoresService.BaseEL">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.BaseEL.FlagEstado">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.BaseEL.UsuarioCreacion">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.BaseEL.FechaCreacion">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.BaseEL.UsuarioModificacion">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.BaseEL.FechaModificacion">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.BaseEL.UsuarioEliminacion">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.BaseEL.FechaEliminacion">
+<remarks/>
+</member>
+<member name="T:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresPreprensasEL">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresPreprensasEL.IdPizarraInterno">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresPreprensasEL.NroLegalOrdenTrabajo">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresPreprensasEL.NombreCliente">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresPreprensasEL.NombreProducto">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresPreprensasEL.FechaEnviadoCliche">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresPreprensasEL.TotalTrabajos">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresPreprensasEL.TotalTrabajosAño">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresPreprensasEL.TotalTrabajosmes">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresPreprensasEL.TotalTrabajosdia">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresPreprensasEL.FechaEnviadoClichemes">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresPreprensasEL.Año">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresPreprensasEL.mes">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresPreprensasEL.NumeroSemana">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresPreprensasEL.FechaIniSemEnviadoProceso">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresPreprensasEL.FechaFinSemEnviadoProceso">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresPreprensasEL.PromedioSem">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresPreprensasEL.TrabajosSinCompletar">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresPreprensasEL.FechaEnviadoProceso">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresPreprensasEL.DescripcionFecha">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresPreprensasEL.EstadoTrabajo">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresPreprensasEL.FechaIniSemEnviadoCliche">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresPreprensasEL.FechaFinSemEnviadoCliche">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresPreprensasEL.TiempoPreprensa">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresPreprensasEL.TrabajosPromedio">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresPreprensasEL.IdEventoControl">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresPreprensasEL.TrabajosConPC">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresPreprensasEL.TrabajosSinPC">
+<remarks/>
+</member>
+<member name="T:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresAperturaEL">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresAperturaEL.IdOrdenTrabajo">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresAperturaEL.NroLegalOrdenTrabajo">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresAperturaEL.NombreCliente">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresAperturaEL.NombreProducto">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresAperturaEL.FechaEnAprobacionCliente">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresAperturaEL.TotalTrabajos">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresAperturaEL.TotalTrabajosAño">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresAperturaEL.TotalTrabajosmes">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresAperturaEL.TotalTrabajosdia">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresAperturaEL.FechaEnAprobacionClientemes">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresAperturaEL.Año">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresAperturaEL.mes">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresAperturaEL.NumeroSemana">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresAperturaEL.FechaIniSemEnAprobacionCliente">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresAperturaEL.FechaFinSemEnAprobacionCliente">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresAperturaEL.PromedioSem">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresAperturaEL.TrabajosSinCompletar">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresAperturaEL.FechaEnviadoDiseno">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresAperturaEL.DescripcionFecha">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresAperturaEL.EstadoTrabajo">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresAperturaEL.FechaIniSemEnviadoDiseno">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresAperturaEL.FechaFinSemEnviadoDiseno">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresAperturaEL.TiempoAperturaHoras">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresAperturaEL.TrabajosPromedio">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresAperturaEL.UsuarioEnAprobacionCliente">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresAperturaEL.UsuarioEnviadoDiseno">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.DisenoIndicadoresService.DiseñoIndicadoresAperturaEL.TiempoDeApertura">
+<remarks/>
+</member>
+<member name="T:Resinplast.Indicadores.Web.ImpresionIndicadoresService.BaseErrorEL">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.BaseErrorEL.Codigo">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.BaseErrorEL.Descripcion">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.BaseErrorEL.Parametros">
+<remarks/>
+</member>
+<member name="T:Resinplast.Indicadores.Web.ImpresionIndicadoresService.BaseEL">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.BaseEL.FlagEstado">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.BaseEL.UsuarioCreacion">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.BaseEL.FechaCreacion">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.BaseEL.UsuarioModificacion">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.BaseEL.FechaModificacion">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.BaseEL.UsuarioEliminacion">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.BaseEL.FechaEliminacion">
+<remarks/>
+</member>
+<member name="T:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresVelocidadEL">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresVelocidadEL.IdRecurso">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresVelocidadEL.Año">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresVelocidadEL.Mes">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresVelocidadEL.SumaMetros">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresVelocidadEL.SumaHoras">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresVelocidadEL.VelocidadTotal">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresVelocidadEL.VelocidadEfectiva">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresVelocidadEL.VelocidadObjetivo">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresVelocidadEL.TipoRecurso">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresVelocidadEL.DescripcionFecha">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresVelocidadEL.BuscarFechaInicio">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresVelocidadEL.BuscarFechaFin">
+<remarks/>
+</member>
+<member name="T:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresScrapEL">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresScrapEL.IdRecurso">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresScrapEL.Año">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresScrapEL.Mes">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresScrapEL.SumaKilosScrap">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresScrapEL.SumaKilosProduccion">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresScrapEL.SumaKilosRegulacion">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresScrapEL.MermaObjetivo">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresScrapEL.MermaResultante">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresScrapEL.TipoRecurso">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresScrapEL.DescripcionFecha">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresScrapEL.BuscarFechaInicio">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresScrapEL.BuscarFechaFin">
+<remarks/>
+</member>
+<member name="T:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresMetrosEL">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresMetrosEL.IdRecurso">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresMetrosEL.Año">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresMetrosEL.Mes">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresMetrosEL.ProduccionMetrosMiles">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresMetrosEL.MetrosObjetivos">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresMetrosEL.MetrosCumplidos">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresMetrosEL.TipoRecurso">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresMetrosEL.DescripcionFecha">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresMetrosEL.BuscarFechaInicio">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresMetrosEL.BuscarFechaFin">
+<remarks/>
+</member>
+<member name="T:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresSetUpEL">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresSetUpEL.IdRecurso">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresSetUpEL.Año">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresSetUpEL.Mes">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresSetUpEL.NumeroCambios">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresSetUpEL.SetUpPromedio">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresSetUpEL.SetUpObjetivo">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresSetUpEL.HorasAcumuladas">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresSetUpEL.SetUpPromedioHeptacromia">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresSetUpEL.SetUpObjetivoHeptacromia">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresSetUpEL.SetUpPromedioSinHeptacromia">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresSetUpEL.SetUpObjetivoSinHeptacromia">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresSetUpEL.TipoRecurso">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresSetUpEL.DescripcionFecha">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresSetUpEL.BuscarFechaInicio">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.ImpresionIndicadoresService.ImpresionIndicadoresSetUpEL.BuscarFechaFin">
+<remarks/>
+</member>
+<member name="T:Resinplast.Indicadores.Web.SeguridadService.BaseErrorEL">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.SeguridadService.BaseErrorEL.Codigo">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.SeguridadService.BaseErrorEL.Descripcion">
+<remarks/>
+</member>
+<member name="T:Resinplast.Indicadores.Web.SeguridadService.BaseEL">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.SeguridadService.BaseEL.FlagEstado">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.SeguridadService.BaseEL.UsuarioCreacion">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.SeguridadService.BaseEL.FechaCreacion">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.SeguridadService.BaseEL.UsuarioModificacion">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.SeguridadService.BaseEL.FechaModificacion">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.SeguridadService.BaseEL.UsuarioEliminacion">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.SeguridadService.BaseEL.FechaEliminacion">
+<remarks/>
+</member>
+<member name="T:Resinplast.Indicadores.Web.SeguridadService.UsuariosEL">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.SeguridadService.UsuariosEL.IdUsuario">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.SeguridadService.UsuariosEL.Contrasena">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.SeguridadService.UsuariosEL.Nombre">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.SeguridadService.UsuariosEL.Apellido">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.SeguridadService.UsuariosEL.Cargo">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.SeguridadService.UsuariosEL.Estado">
+<remarks/>
+</member>
+<member name="T:Resinplast.Indicadores.Web.SeguridadService.EventoEL">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.SeguridadService.EventoEL.IdSistema">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.SeguridadService.EventoEL.IdAplicacion">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.SeguridadService.EventoEL.IdDocumento">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.SeguridadService.EventoEL.IdEvento">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.SeguridadService.EventoEL.Evento">
+<remarks/>
+</member>
+<member name="T:Resinplast.Indicadores.Web.SeguridadService.DocumentoPermisoEL">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.SeguridadService.DocumentoPermisoEL.IdSistema">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.SeguridadService.DocumentoPermisoEL.IdAplicacion">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.SeguridadService.DocumentoPermisoEL.IdDocumento">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.SeguridadService.DocumentoPermisoEL.Documento">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.SeguridadService.DocumentoPermisoEL.ListaEventos">
+<remarks/>
+</member>
+<member name="T:Resinplast.Indicadores.Web.SeguridadService.AplicacionPermisoEL">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.SeguridadService.AplicacionPermisoEL.IdSistema">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.SeguridadService.AplicacionPermisoEL.IdAplicacion">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.SeguridadService.AplicacionPermisoEL.Aplicacion">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.SeguridadService.AplicacionPermisoEL.ListaDocumentos">
+<remarks/>
+</member>
+<member name="T:Resinplast.Indicadores.Web.SeguridadService.AutenticacionPermisoEL">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.SeguridadService.AutenticacionPermisoEL.FlagAutentificacion">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.SeguridadService.AutenticacionPermisoEL.IdSistema">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.SeguridadService.AutenticacionPermisoEL.Sistema">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.SeguridadService.AutenticacionPermisoEL.BdConexion">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.SeguridadService.AutenticacionPermisoEL.Comodin1">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.SeguridadService.AutenticacionPermisoEL.Comodin2">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.SeguridadService.AutenticacionPermisoEL.Comodin3">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.SeguridadService.AutenticacionPermisoEL.IdUsuario">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.SeguridadService.AutenticacionPermisoEL.Nombre">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.SeguridadService.AutenticacionPermisoEL.Apellido">
+<remarks/>
+</member>
+<member name="P:Resinplast.Indicadores.Web.SeguridadService.AutenticacionPermisoEL.ListaAplicaciones">
+<remarks/>
+</member>
+</members>
+</doc>

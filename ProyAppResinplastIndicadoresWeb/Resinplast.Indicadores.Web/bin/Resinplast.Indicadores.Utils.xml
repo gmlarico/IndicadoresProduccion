@@ -1,0 +1,226 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Resinplast.Indicadores.Utils
+</name>
+</assembly>
+<members>
+<member name="T:Resinplast.Indicadores.Utils.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Utils.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Utils.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="F:Resinplast.Indicadores.Utils.Enumerated.ConfigurationInitial.FormatDate">
+ <summary>
+ Formato de Fecha
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Resinplast.Indicadores.Utils.Enumerated.ConfigurationInitial.FormatDateFilter">
+ <summary>
+ Formato de Fecha
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Resinplast.Indicadores.Utils.Enumerated.ConfigurationInitial.FormatDateTime">
+ <summary>
+ Formato de Fecha y Hora
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Resinplast.Indicadores.Utils.Enumerated.ConfigurationInitial.FormatoDecimal">
+ <summary>
+ Formato de Decimal
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Resinplast.Indicadores.Utils.Enumerated.ConfigurationInitial.NumberDecimalSeparator">
+ <summary>
+ Separador Decimal
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Resinplast.Indicadores.Utils.Enumerated.ConfigurationInitial.NumberGroupSeparator">
+ <summary>
+ Separador de Miles
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Resinplast.Indicadores.Utils.Enumerated.ConfigurationInitial.RowsPerPage">
+ <summary>
+ Número de Filas por Pagina
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Resinplast.Indicadores.Utils.Enumerated.ConfigurationInitial.FormatDateGrid">
+ <summary>
+ Formato de Fecha Grid
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Resinplast.Indicadores.Utils.Enumerated.ConfigurationInitial.FormatDateTimeGrid">
+ <summary>
+ Formato de Fecha Completo Grid
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Resinplast.Indicadores.Utils.Enumerated.ConfigurationInitial.FormatHourGrid">
+ <summary>
+ Formato de Hora Grid
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Resinplast.Indicadores.Utils.Enumerated.ResponseCode.CodigoCorrecto">
+ <summary>
+ Codigo Correcto
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Resinplast.Indicadores.Utils.Enumerated.ResponseCode.CodigoErrorControlado">
+ <summary>
+ Codigo de error controlado
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Resinplast.Indicadores.Utils.Enumerated.ResponseCode.CodigoErrorDataBase">
+ <summary>
+ Codigo de error de base de datos
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Resinplast.Indicadores.Utils.Enumerated.ResponseCode.CodigoErrorAplicacion">
+ <summary>
+ Codigo Error Aplicacion
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Resinplast.Indicadores.Utils.Enumerated.CodigoEventoDocumento.UsuarioAdministrado">
+ <summary>
+ Ingresar
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Resinplast.Indicadores.Utils.Enumerated.CodigoEventoDocumento.Ingresar">
+ <summary>
+ Ingresar
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Resinplast.Indicadores.Utils.Enumerated.CodigoEventoDocumento.Visualizar">
+ <summary>
+ Visualizar
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Resinplast.Indicadores.Utils.Enumerated.CodigoEventoDocumento.Duplicar">
+ <summary>
+ Duplicar
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Resinplast.Indicadores.Utils.Enumerated.CodigoEventoDocumento.Actualizar">
+ <summary>
+ Actualizar
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Resinplast.Indicadores.Utils.Enumerated.CodigoEventoDocumento.Eliminar">
+ <summary>
+ Eliminar
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Resinplast.Indicadores.Utils.Enumerated.CodigoEventoDocumento.Anular">
+ <summary>
+ Anular
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Resinplast.Indicadores.Utils.Enumerated.CodigoEventoDocumento.Buscar">
+ <summary>
+ Buscar
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Resinplast.Indicadores.Utils.Enumerated.TextoValidacionMessageBox.ValidarDescripcion">
+ <summary>
+ Validar Descripcion
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Resinplast.Indicadores.Utils.Enumerated.TituloMessageBox">
+ <summary>
+ Texto Titulo Mensajes MessageBox
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Resinplast.Indicadores.Utils.Enumerated.TituloMessageBox.TituloError">
+ <summary>
+ ERROR
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Resinplast.Indicadores.Utils.Enumerated.TituloMessageBox.TituloMensaje">
+ <summary>
+ MENSAJE
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Resinplast.Indicadores.Utils.Enumerated.TituloMessageBox.TituloAviso">
+ <summary>
+ ERROR
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Resinplast.Indicadores.Utils.EnumeratedGlobales.UsuarioConectado">
+ <summary>
+ Usuario registrado
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Resinplast.Indicadores.Utils.EnumeratedGlobales.EntornoTrabajo">
+ <summary>
+ URL de servidor
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Resinplast.Indicadores.Utils.EnumeratedGlobales.NombreBaseDatos">
+ <summary>
+ Nombre de base de datos
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Resinplast.Indicadores.Utils.EnumeratedGlobales.ListaIndicadoresAperturaDiaDetalle">
+ <summary>
+ Lista Detalle Aperturas
+ </summary>
+</member>
+<member name="F:Resinplast.Indicadores.Utils.EnumeratedGlobales.ListaIndicadoresPreprensaDiaDetalle">
+ <summary>
+ Lista Detalle Preprensa
+ </summary>
+</member>
+<member name="F:Resinplast.Indicadores.Utils.EnumeratedGlobales.ListFiltradaApertura">
+ <summary>
+ Lista Filtrada Apertura
+ </summary>
+</member>
+<member name="F:Resinplast.Indicadores.Utils.EnumeratedGlobales.ListFiltradaPreprensa">
+ <summary>
+ Lista Filtrada Preprensa
+ </summary>
+</member>
+</members>
+</doc>

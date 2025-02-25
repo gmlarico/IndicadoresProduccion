@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="urn:resinplast:Indicadores:DisenoIndicadores" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="DiseñoIndicadores" targetNamespace="urn:resinplast:Indicadores:DisenoIndicadores" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="IdOrdenTrabajo" type="xs:string" />
+      <xs:element name="NroLegalOrdenTrabajo" type="xs:string" />
+      <xs:element name="NombreCliente" type="xs:string" />
+      <xs:element name="NombreProducto" type="xs:string" />
+      <xs:element name="FechaEnAprobacionCliente" type="xs:dateTime" />
+      <xs:element name="TotalTrabajos" type="xs:string" />
+      <xs:element name="TotalTrabajosAño" type="xs:string" />
+      <xs:element name="TotalTrabajosmes" type="xs:string" />
+      <xs:element name="TotalTrabajosdia" type="xs:string" />
+      <xs:element name="FechaEnAprobacionClientemes" type="xs:string" />
+      <xs:element name="Año" type="xs:string" />
+      <xs:element name="mes" type="xs:string" />
+      <xs:element name="NumeroSemana" type="xs:string" />
+      <xs:element name="FechaIniSemEnAprobacionCliente" type="xs:dateTime" />
+      <xs:element name="FechaFinSemEnAprobacionCliente" type="xs:dateTime" />
+      <xs:element name="PromedioSem" type="xs:string" />
+      <xs:element name="TrabajosSinCompletar" type="xs:string" />
+      <xs:element name="FechaEnviadoDiseno" type="xs:dateTime" />
+      <xs:element name="DescripcionFecha" type="xs:string" />
+      <xs:element name="EstadoTrabajo" type="xs:string" />
+      <xs:element name="FechaIniSemEnviadoDiseno" type="xs:dateTime" />
+      <xs:element name="FechaFinSemEnviadoDiseno" type="xs:dateTime" />
+      <xs:element name="TiempoAperturaHoras" type="xs:double" />
+      <xs:element name="TiempoPromedio" type="xs:string" />
+      <xs:element name="UsuarioEnAprobacionCliente" type="xs:string" />
+      <xs:element name="UsuarioEnviadoDiseno" type="xs:string" />
+      <xs:element name="TiempoDeApertura" type="xs:double" />
+      <xs:element name="CodigoError" type="xs:int" />
+      <xs:element name="DescripcionError" type="xs:string" />
+      <xs:element name="ListaError" type="ArrayOfBaseErrorEL" />
+      <xs:complexType name="ArrayOfBaseErrorEL">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="BaseErrorEL" nillable="true" type="BaseErrorEL" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="BaseErrorEL">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="Codigo" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Descripcion" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Parametros" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ListaIndicadorAperturasDia" type="ArrayOfDiseñoIndicadoresAperturaEL" />
+      <xs:complexType name="ArrayOfDiseñoIndicadoresAperturaEL">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="DiseñoIndicadoresAperturaEL" nillable="true" type="DiseñoIndicadoresAperturaEL" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="DiseñoIndicadoresAperturaEL">
+        <xs:complexContent mixed="false">
+          <xs:extension base="BaseEL">
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="1" name="IdOrdenTrabajo" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="NroLegalOrdenTrabajo" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="NombreCliente" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="NombreProducto" type="xs:string" />
+              <xs:element minOccurs="1" maxOccurs="1" name="FechaEnAprobacionCliente" type="xs:dateTime" />
+              <xs:element minOccurs="0" maxOccurs="1" name="TotalTrabajos" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="TotalTrabajosAño" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="TotalTrabajosmes" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="TotalTrabajosdia" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="FechaEnAprobacionClientemes" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="Año" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="mes" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="NumeroSemana" type="xs:string" />
+              <xs:element minOccurs="1" maxOccurs="1" name="FechaIniSemEnAprobacionCliente" type="xs:dateTime" />
+              <xs:element minOccurs="1" maxOccurs="1" name="FechaFinSemEnAprobacionCliente" type="xs:dateTime" />
+              <xs:element minOccurs="0" maxOccurs="1" name="PromedioSem" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="TrabajosSinCompletar" type="xs:string" />
+              <xs:element minOccurs="1" maxOccurs="1" name="FechaEnviadoDiseno" type="xs:dateTime" />
+              <xs:element minOccurs="0" maxOccurs="1" name="DescripcionFecha" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="EstadoTrabajo" type="xs:string" />
+              <xs:element minOccurs="1" maxOccurs="1" name="FechaIniSemEnviadoDiseno" type="xs:dateTime" />
+              <xs:element minOccurs="1" maxOccurs="1" name="FechaFinSemEnviadoDiseno" type="xs:dateTime" />
+              <xs:element minOccurs="1" maxOccurs="1" name="TiempoAperturaHoras" type="xs:double" />
+              <xs:element minOccurs="0" maxOccurs="1" name="TrabajosPromedio" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="UsuarioEnAprobacionCliente" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="UsuarioEnviadoDiseno" type="xs:string" />
+              <xs:element minOccurs="1" maxOccurs="1" name="TiempoDeApertura" type="xs:double" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="BaseEL">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="FlagEstado" type="xs:int" />
+          <xs:element minOccurs="0" maxOccurs="1" name="UsuarioCreacion" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="FechaCreacion" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="UsuarioModificacion" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="FechaModificacion" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="UsuarioEliminacion" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="FechaEliminacion" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ListaIndicadorAperturasDiaCliente" type="ArrayOfDiseñoIndicadoresAperturaEL" />
+      <xs:element name="ListaIndicadorAperturasDiaDetalle" type="ArrayOfDiseñoIndicadoresAperturaEL" />
+      <xs:element name="ListaIndicadorAperturasSemana" type="ArrayOfDiseñoIndicadoresAperturaEL" />
+      <xs:element name="ListaIndicadorAperturasCompletadasSemana" type="ArrayOfDiseñoIndicadoresAperturaEL" />
+      <xs:element name="ListarAperturasCompletadasPorUsuario" type="ArrayOfDiseñoIndicadoresAperturaEL" />
+      <xs:element name="IdPizarraInterno" type="xs:string" />
+      <xs:element name="FechaEnviadoCliche" type="xs:dateTime" />
+      <xs:element name="FechaEnviadoClichemes" type="xs:string" />
+      <xs:element name="FechaIniSemEnviadoProceso" type="xs:dateTime" />
+      <xs:element name="FechaFinSemEnviadoProceso" type="xs:dateTime" />
+      <xs:element name="FechaEnviadoProceso" type="xs:dateTime" />
+      <xs:element name="FechaIniSemEnviadoCliche" type="xs:dateTime" />
+      <xs:element name="FechaFinSemEnviadoCliche" type="xs:dateTime" />
+      <xs:element name="TiempoPreprensa" type="xs:int" />
+      <xs:element name="IdEventoControl" type="xs:string" />
+      <xs:element name="TrabajosConPC" type="xs:string" />
+      <xs:element name="TrabajosSinPC" type="xs:string" />
+      <xs:element name="ListaIndicadorPreprensasDia" type="ArrayOfDiseñoIndicadoresPreprensasEL" />
+      <xs:complexType name="ArrayOfDiseñoIndicadoresPreprensasEL">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="DiseñoIndicadoresPreprensasEL" nillable="true" type="DiseñoIndicadoresPreprensasEL" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="DiseñoIndicadoresPreprensasEL">
+        <xs:complexContent mixed="false">
+          <xs:extension base="BaseEL">
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="1" name="IdPizarraInterno" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="NroLegalOrdenTrabajo" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="NombreCliente" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="NombreProducto" type="xs:string" />
+              <xs:element minOccurs="1" maxOccurs="1" name="FechaEnviadoCliche" type="xs:dateTime" />
+              <xs:element minOccurs="0" maxOccurs="1" name="TotalTrabajos" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="TotalTrabajosAño" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="TotalTrabajosmes" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="TotalTrabajosdia" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="FechaEnviadoClichemes" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="Año" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="mes" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="NumeroSemana" type="xs:string" />
+              <xs:element minOccurs="1" maxOccurs="1" name="FechaIniSemEnviadoProceso" type="xs:dateTime" />
+              <xs:element minOccurs="1" maxOccurs="1" name="FechaFinSemEnviadoProceso" type="xs:dateTime" />
+              <xs:element minOccurs="0" maxOccurs="1" name="PromedioSem" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="TrabajosSinCompletar" type="xs:string" />
+              <xs:element minOccurs="1" maxOccurs="1" name="FechaEnviadoProceso" type="xs:dateTime" />
+              <xs:element minOccurs="0" maxOccurs="1" name="DescripcionFecha" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="EstadoTrabajo" type="xs:string" />
+              <xs:element minOccurs="1" maxOccurs="1" name="FechaIniSemEnviadoCliche" type="xs:dateTime" />
+              <xs:element minOccurs="1" maxOccurs="1" name="FechaFinSemEnviadoCliche" type="xs:dateTime" />
+              <xs:element minOccurs="1" maxOccurs="1" name="TiempoPreprensa" type="xs:int" />
+              <xs:element minOccurs="0" maxOccurs="1" name="TrabajosPromedio" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="IdEventoControl" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="TrabajosConPC" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="TrabajosSinPC" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:element name="ListaIndicadorPreprensasDiaCliente" type="ArrayOfDiseñoIndicadoresPreprensasEL" />
+      <xs:element name="ListaIndicadorPreprensasDiaDetalle" type="ArrayOfDiseñoIndicadoresPreprensasEL" />
+      <xs:element name="ListaIndicadorPreprensasSemana" type="ArrayOfDiseñoIndicadoresPreprensasEL" />
+      <xs:element name="ListaIndicadorPreprensasCompletadasSemana" type="ArrayOfDiseñoIndicadoresPreprensasEL" />
+      <xs:element name="ListaIndicadorPreprensasDiaPruebaColor" type="ArrayOfDiseñoIndicadoresPreprensasEL" />
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="DiseñoIndicadoresAperturaRequest">
+    <wsdl:part name="IdOrdenTrabajo" element="IdOrdenTrabajo" />
+    <wsdl:part name="NroLegalOrdenTrabajo" element="NroLegalOrdenTrabajo" />
+    <wsdl:part name="NombreCliente" element="NombreCliente" />
+    <wsdl:part name="NombreProducto" element="NombreProducto" />
+    <wsdl:part name="FechaEnAprobacionCliente" element="FechaEnAprobacionCliente" />
+    <wsdl:part name="TotalTrabajos" element="TotalTrabajos" />
+    <wsdl:part name="TotalTrabajosAño" element="TotalTrabajosAño" />
+    <wsdl:part name="TotalTrabajosmes" element="TotalTrabajosmes" />
+    <wsdl:part name="TotalTrabajosdia" element="TotalTrabajosdia" />
+    <wsdl:part name="FechaEnAprobacionClientemes" element="FechaEnAprobacionClientemes" />
+    <wsdl:part name="Año" element="Año" />
+    <wsdl:part name="mes" element="mes" />
+    <wsdl:part name="NumeroSemana" element="NumeroSemana" />
+    <wsdl:part name="FechaIniSemEnAprobacionCliente" element="FechaIniSemEnAprobacionCliente" />
+    <wsdl:part name="FechaFinSemEnAprobacionCliente" element="FechaFinSemEnAprobacionCliente" />
+    <wsdl:part name="PromedioSem" element="PromedioSem" />
+    <wsdl:part name="TrabajosSinCompletar" element="TrabajosSinCompletar" />
+    <wsdl:part name="FechaEnviadoDiseno" element="FechaEnviadoDiseno" />
+    <wsdl:part name="DescripcionFecha" element="DescripcionFecha" />
+    <wsdl:part name="EstadoTrabajo" element="EstadoTrabajo" />
+    <wsdl:part name="FechaIniSemEnviadoDiseno" element="FechaIniSemEnviadoDiseno" />
+    <wsdl:part name="FechaFinSemEnviadoDiseno" element="FechaFinSemEnviadoDiseno" />
+    <wsdl:part name="TiempoAperturaHoras" element="TiempoAperturaHoras" />
+    <wsdl:part name="TiempoPromedio" element="TiempoPromedio" />
+    <wsdl:part name="UsuarioEnAprobacionCliente" element="UsuarioEnAprobacionCliente" />
+    <wsdl:part name="UsuarioEnviadoDiseno" element="UsuarioEnviadoDiseno" />
+    <wsdl:part name="TiempoDeApertura" element="TiempoDeApertura" />
+  </wsdl:message>
+  <wsdl:message name="DiseñoIndicadoresAperturaResponse">
+    <wsdl:part name="CodigoError" element="CodigoError" />
+    <wsdl:part name="DescripcionError" element="DescripcionError" />
+    <wsdl:part name="ListaError" element="ListaError" />
+    <wsdl:part name="ListaIndicadorAperturasDia" element="ListaIndicadorAperturasDia" />
+    <wsdl:part name="ListaIndicadorAperturasDiaCliente" element="ListaIndicadorAperturasDiaCliente" />
+    <wsdl:part name="ListaIndicadorAperturasDiaDetalle" element="ListaIndicadorAperturasDiaDetalle" />
+    <wsdl:part name="ListaIndicadorAperturasSemana" element="ListaIndicadorAperturasSemana" />
+    <wsdl:part name="ListaIndicadorAperturasCompletadasSemana" element="ListaIndicadorAperturasCompletadasSemana" />
+    <wsdl:part name="ListarAperturasCompletadasPorUsuario" element="ListarAperturasCompletadasPorUsuario" />
+  </wsdl:message>
+  <wsdl:message name="DiseñoIndicadoresPreprensasRequest">
+    <wsdl:part name="IdPizarraInterno" element="IdPizarraInterno" />
+    <wsdl:part name="NroLegalOrdenTrabajo" element="NroLegalOrdenTrabajo" />
+    <wsdl:part name="NombreCliente" element="NombreCliente" />
+    <wsdl:part name="NombreProducto" element="NombreProducto" />
+    <wsdl:part name="FechaEnviadoCliche" element="FechaEnviadoCliche" />
+    <wsdl:part name="TotalTrabajos" element="TotalTrabajos" />
+    <wsdl:part name="TotalTrabajosAño" element="TotalTrabajosAño" />
+    <wsdl:part name="TotalTrabajosmes" element="TotalTrabajosmes" />
+    <wsdl:part name="TotalTrabajosdia" element="TotalTrabajosdia" />
+    <wsdl:part name="FechaEnviadoClichemes" element="FechaEnviadoClichemes" />
+    <wsdl:part name="Año" element="Año" />
+    <wsdl:part name="mes" element="mes" />
+    <wsdl:part name="NumeroSemana" element="NumeroSemana" />
+    <wsdl:part name="FechaIniSemEnviadoProceso" element="FechaIniSemEnviadoProceso" />
+    <wsdl:part name="FechaFinSemEnviadoProceso" element="FechaFinSemEnviadoProceso" />
+    <wsdl:part name="PromedioSem" element="PromedioSem" />
+    <wsdl:part name="TrabajosSinCompletar" element="TrabajosSinCompletar" />
+    <wsdl:part name="FechaEnviadoProceso" element="FechaEnviadoProceso" />
+    <wsdl:part name="DescripcionFecha" element="DescripcionFecha" />
+    <wsdl:part name="EstadoTrabajo" element="EstadoTrabajo" />
+    <wsdl:part name="FechaIniSemEnviadoCliche" element="FechaIniSemEnviadoCliche" />
+    <wsdl:part name="FechaFinSemEnviadoCliche" element="FechaFinSemEnviadoCliche" />
+    <wsdl:part name="TiempoPreprensa" element="TiempoPreprensa" />
+    <wsdl:part name="TiempoPromedio" element="TiempoPromedio" />
+    <wsdl:part name="IdEventoControl" element="IdEventoControl" />
+    <wsdl:part name="TrabajosConPC" element="TrabajosConPC" />
+    <wsdl:part name="TrabajosSinPC" element="TrabajosSinPC" />
+  </wsdl:message>
+  <wsdl:message name="DiseñoIndicadoresPreprensasResponse">
+    <wsdl:part name="CodigoError" element="CodigoError" />
+    <wsdl:part name="DescripcionError" element="DescripcionError" />
+    <wsdl:part name="ListaError" element="ListaError" />
+    <wsdl:part name="ListaIndicadorPreprensasDia" element="ListaIndicadorPreprensasDia" />
+    <wsdl:part name="ListaIndicadorPreprensasDiaCliente" element="ListaIndicadorPreprensasDiaCliente" />
+    <wsdl:part name="ListaIndicadorPreprensasDiaDetalle" element="ListaIndicadorPreprensasDiaDetalle" />
+    <wsdl:part name="ListaIndicadorPreprensasSemana" element="ListaIndicadorPreprensasSemana" />
+    <wsdl:part name="ListaIndicadorPreprensasCompletadasSemana" element="ListaIndicadorPreprensasCompletadasSemana" />
+    <wsdl:part name="ListaIndicadorPreprensasDiaPruebaColor" element="ListaIndicadorPreprensasDiaPruebaColor" />
+  </wsdl:message>
+  <wsdl:portType name="IDiseñoIndicadores">
+    <wsdl:operation name="ListarAperturasDia">
+      <wsdl:input wsaw:Action="urn:resinplast:Indicadores:DisenoIndicadores:ListarAperturasDia" name="DiseñoIndicadoresAperturaRequest" message="tns:DiseñoIndicadoresAperturaRequest" />
+      <wsdl:output wsaw:Action="" name="DiseñoIndicadoresAperturaResponse" message="tns:DiseñoIndicadoresAperturaResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarAperturasCompletadasSemana">
+      <wsdl:input wsaw:Action="urn:resinplast:Indicadores:DisenoIndicadores:ListarAperturasCompletadasSemana" name="DiseñoIndicadoresAperturaRequest" message="tns:DiseñoIndicadoresAperturaRequest" />
+      <wsdl:output wsaw:Action="" name="DiseñoIndicadoresAperturaResponse" message="tns:DiseñoIndicadoresAperturaResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarAperturasSemana">
+      <wsdl:input wsaw:Action="urn:resinplast:Indicadores:DisenoIndicadores:ListarAperturasSemana" name="DiseñoIndicadoresAperturaRequest" message="tns:DiseñoIndicadoresAperturaRequest" />
+      <wsdl:output wsaw:Action="" name="DiseñoIndicadoresAperturaResponse" message="tns:DiseñoIndicadoresAperturaResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarAperturasDiaDetalle">
+      <wsdl:input wsaw:Action="urn:resinplast:Indicadores:DisenoIndicadores:ListarAperturasDiaDetalle" name="DiseñoIndicadoresAperturaRequest" message="tns:DiseñoIndicadoresAperturaRequest" />
+      <wsdl:output wsaw:Action="" name="DiseñoIndicadoresAperturaResponse" message="tns:DiseñoIndicadoresAperturaResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarAperturasCompletadasPorUsuario">
+      <wsdl:input wsaw:Action="urn:resinplast:Indicadores:DisenoIndicadores:ListarAperturasCompletadasPorUsuario" name="DiseñoIndicadoresAperturaRequest" message="tns:DiseñoIndicadoresAperturaRequest" />
+      <wsdl:output wsaw:Action="" name="DiseñoIndicadoresAperturaResponse" message="tns:DiseñoIndicadoresAperturaResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarPrepensaDia">
+      <wsdl:input wsaw:Action="urn:resinplast:Indicadores:DisenoIndicadores:ListarPrepensaDia" name="DiseñoIndicadoresPreprensasRequest" message="tns:DiseñoIndicadoresPreprensasRequest" />
+      <wsdl:output wsaw:Action="" name="DiseñoIndicadoresPreprensasResponse" message="tns:DiseñoIndicadoresPreprensasResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarPreprensaDiaDetalle">
+      <wsdl:input wsaw:Action="urn:resinplast:Indicadores:DisenoIndicadores:ListarPreprensaDiaDetalle" name="DiseñoIndicadoresPreprensasRequest" message="tns:DiseñoIndicadoresPreprensasRequest" />
+      <wsdl:output wsaw:Action="" name="DiseñoIndicadoresPreprensasResponse" message="tns:DiseñoIndicadoresPreprensasResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarPreprensasSemana">
+      <wsdl:input wsaw:Action="urn:resinplast:Indicadores:DisenoIndicadores:ListarPreprensasSemana" name="DiseñoIndicadoresPreprensasRequest" message="tns:DiseñoIndicadoresPreprensasRequest" />
+      <wsdl:output wsaw:Action="" name="DiseñoIndicadoresPreprensasResponse" message="tns:DiseñoIndicadoresPreprensasResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarPreprensasCompletadasSemana">
+      <wsdl:input wsaw:Action="urn:resinplast:Indicadores:DisenoIndicadores:ListarPreprensasCompletadasSemana" name="DiseñoIndicadoresPreprensasRequest" message="tns:DiseñoIndicadoresPreprensasRequest" />
+      <wsdl:output wsaw:Action="" name="DiseñoIndicadoresPreprensasResponse" message="tns:DiseñoIndicadoresPreprensasResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarPrepensaDiaPruebaColor">
+      <wsdl:input wsaw:Action="urn:resinplast:Indicadores:DisenoIndicadores:ListarPrepensaDiaPruebaColor" name="DiseñoIndicadoresPreprensasRequest" message="tns:DiseñoIndicadoresPreprensasRequest" />
+      <wsdl:output wsaw:Action="" name="DiseñoIndicadoresPreprensasResponse" message="tns:DiseñoIndicadoresPreprensasResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IDiseñoIndicadores" type="tns:IDiseñoIndicadores">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListarAperturasDia">
+      <soap:operation soapAction="urn:resinplast:Indicadores:DisenoIndicadores:ListarAperturasDia" style="document" />
+      <wsdl:input name="DiseñoIndicadoresAperturaRequest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DiseñoIndicadoresAperturaResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarAperturasCompletadasSemana">
+      <soap:operation soapAction="urn:resinplast:Indicadores:DisenoIndicadores:ListarAperturasCompletadasSemana" style="document" />
+      <wsdl:input name="DiseñoIndicadoresAperturaRequest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DiseñoIndicadoresAperturaResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarAperturasSemana">
+      <soap:operation soapAction="urn:resinplast:Indicadores:DisenoIndicadores:ListarAperturasSemana" style="document" />
+      <wsdl:input name="DiseñoIndicadoresAperturaRequest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DiseñoIndicadoresAperturaResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarAperturasDiaDetalle">
+      <soap:operation soapAction="urn:resinplast:Indicadores:DisenoIndicadores:ListarAperturasDiaDetalle" style="document" />
+      <wsdl:input name="DiseñoIndicadoresAperturaRequest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DiseñoIndicadoresAperturaResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarAperturasCompletadasPorUsuario">
+      <soap:operation soapAction="urn:resinplast:Indicadores:DisenoIndicadores:ListarAperturasCompletadasPorUsuario" style="document" />
+      <wsdl:input name="DiseñoIndicadoresAperturaRequest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DiseñoIndicadoresAperturaResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarPrepensaDia">
+      <soap:operation soapAction="urn:resinplast:Indicadores:DisenoIndicadores:ListarPrepensaDia" style="document" />
+      <wsdl:input name="DiseñoIndicadoresPreprensasRequest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DiseñoIndicadoresPreprensasResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarPreprensaDiaDetalle">
+      <soap:operation soapAction="urn:resinplast:Indicadores:DisenoIndicadores:ListarPreprensaDiaDetalle" style="document" />
+      <wsdl:input name="DiseñoIndicadoresPreprensasRequest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DiseñoIndicadoresPreprensasResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarPreprensasSemana">
+      <soap:operation soapAction="urn:resinplast:Indicadores:DisenoIndicadores:ListarPreprensasSemana" style="document" />
+      <wsdl:input name="DiseñoIndicadoresPreprensasRequest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DiseñoIndicadoresPreprensasResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarPreprensasCompletadasSemana">
+      <soap:operation soapAction="urn:resinplast:Indicadores:DisenoIndicadores:ListarPreprensasCompletadasSemana" style="document" />
+      <wsdl:input name="DiseñoIndicadoresPreprensasRequest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DiseñoIndicadoresPreprensasResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarPrepensaDiaPruebaColor">
+      <soap:operation soapAction="urn:resinplast:Indicadores:DisenoIndicadores:ListarPrepensaDiaPruebaColor" style="document" />
+      <wsdl:input name="DiseñoIndicadoresPreprensasRequest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DiseñoIndicadoresPreprensasResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DiseñoIndicadores">
+    <wsdl:port name="BasicHttpBinding_IDiseñoIndicadores" binding="tns:BasicHttpBinding_IDiseñoIndicadores">
+      <soap:address location="http://localhost:27925/DisenoIndicadores.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

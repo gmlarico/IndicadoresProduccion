@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="urn:resinplast:seguridad:autenticacion" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Autenticacion" targetNamespace="urn:resinplast:seguridad:autenticacion" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="IdSistema" type="xs:string" />
+      <xs:element name="IdAplicacion" type="xs:string" />
+      <xs:element name="IdUsuario" type="xs:string" />
+      <xs:element name="Contrasena" type="xs:string" />
+      <xs:element name="CodigoError" type="xs:int" />
+      <xs:element name="DescripcionError" type="xs:string" />
+      <xs:element name="ListaError" type="ArrayOfBaseErrorEL" />
+      <xs:complexType name="ArrayOfBaseErrorEL">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="BaseErrorEL" nillable="true" type="BaseErrorEL" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="BaseErrorEL">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="Codigo" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Descripcion" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ListaPermisos" type="ArrayOfAutenticacionPermisoEL" />
+      <xs:complexType name="ArrayOfAutenticacionPermisoEL">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="AutenticacionPermisoEL" nillable="true" type="AutenticacionPermisoEL" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="AutenticacionPermisoEL">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="FlagAutentificacion" type="xs:int" />
+          <xs:element minOccurs="0" maxOccurs="1" name="IdSistema" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Sistema" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="BdConexion" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Comodin1" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Comodin2" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Comodin3" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="IdUsuario" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Nombre" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Apellido" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="ListaAplicaciones" type="AplicacionPermisoEL" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="AplicacionPermisoEL">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="IdSistema" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="IdAplicacion" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Aplicacion" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="ListaDocumentos" type="DocumentoPermisoEL" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="DocumentoPermisoEL">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="IdSistema" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="IdAplicacion" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="IdDocumento" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Documento" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="ListaEventos" type="EventoEL" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="EventoEL">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="IdSistema" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="IdAplicacion" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="IdDocumento" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="IdEvento" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Evento" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="FechaCreacion" type="xs:dateTime" />
+      <xs:element name="FechaEliminacion" type="xs:dateTime" />
+      <xs:element name="FechaModificacion" type="xs:dateTime" />
+      <xs:element name="FlagEstado" type="xs:int" />
+      <xs:element name="UsuarioCreacion" type="xs:string" />
+      <xs:element name="UsuarioEliminacion" type="xs:string" />
+      <xs:element name="UsuarioModificacion" type="xs:string" />
+      <xs:element name="Nombre" type="xs:string" />
+      <xs:element name="Apellido" type="xs:string" />
+      <xs:element name="Cargo" type="xs:string" />
+      <xs:element name="Estado" type="xs:string" />
+      <xs:element name="ListarUsuarios" type="ArrayOfUsuariosEL" />
+      <xs:complexType name="ArrayOfUsuariosEL">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="UsuariosEL" nillable="true" type="UsuariosEL" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="UsuariosEL">
+        <xs:complexContent mixed="false">
+          <xs:extension base="BaseEL">
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="1" name="IdUsuario" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="Contrasena" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="Nombre" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="Apellido" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="Cargo" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="1" name="Estado" type="xs:string" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="BaseEL">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="FlagEstado" type="xs:int" />
+          <xs:element minOccurs="0" maxOccurs="1" name="UsuarioCreacion" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="FechaCreacion" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="UsuarioModificacion" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="FechaModificacion" type="xs:dateTime" />
+          <xs:element minOccurs="0" maxOccurs="1" name="UsuarioEliminacion" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="FechaEliminacion" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="AutenticacionRequest">
+    <wsdl:part name="IdSistema" element="IdSistema" />
+    <wsdl:part name="IdAplicacion" element="IdAplicacion" />
+    <wsdl:part name="IdUsuario" element="IdUsuario" />
+    <wsdl:part name="Contrasena" element="Contrasena" />
+  </wsdl:message>
+  <wsdl:message name="AutenticacionResponse">
+    <wsdl:part name="CodigoError" element="CodigoError" />
+    <wsdl:part name="DescripcionError" element="DescripcionError" />
+    <wsdl:part name="ListaError" element="ListaError" />
+    <wsdl:part name="ListaPermisos" element="ListaPermisos" />
+  </wsdl:message>
+  <wsdl:message name="UsuariosRequest">
+    <wsdl:part name="FechaCreacion" element="FechaCreacion" />
+    <wsdl:part name="FechaEliminacion" element="FechaEliminacion" />
+    <wsdl:part name="FechaModificacion" element="FechaModificacion" />
+    <wsdl:part name="FlagEstado" element="FlagEstado" />
+    <wsdl:part name="UsuarioCreacion" element="UsuarioCreacion" />
+    <wsdl:part name="UsuarioEliminacion" element="UsuarioEliminacion" />
+    <wsdl:part name="UsuarioModificacion" element="UsuarioModificacion" />
+    <wsdl:part name="IdUsuario" element="IdUsuario" />
+    <wsdl:part name="Contrasena" element="Contrasena" />
+    <wsdl:part name="Nombre" element="Nombre" />
+    <wsdl:part name="Apellido" element="Apellido" />
+    <wsdl:part name="Cargo" element="Cargo" />
+    <wsdl:part name="Estado" element="Estado" />
+  </wsdl:message>
+  <wsdl:message name="UsuariosResponse">
+    <wsdl:part name="CodigoError" element="CodigoError" />
+    <wsdl:part name="DescripcionError" element="DescripcionError" />
+    <wsdl:part name="ListaError" element="ListaError" />
+    <wsdl:part name="ListarUsuarios" element="ListarUsuarios" />
+  </wsdl:message>
+  <wsdl:portType name="IAutenticacion">
+    <wsdl:operation name="ListarPermisos">
+      <wsdl:input wsaw:Action="urn:resinplast:seguridad:autenticacion:ListarPermisos" name="AutenticacionRequest" message="tns:AutenticacionRequest" />
+      <wsdl:output wsaw:Action="" name="AutenticacionResponse" message="tns:AutenticacionResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarUsuarioPermisos">
+      <wsdl:input wsaw:Action="urn:resinplast:seguridad:autenticacion:ListarUsuarioPermisos" name="AutenticacionRequest" message="tns:AutenticacionRequest" />
+      <wsdl:output wsaw:Action="" name="AutenticacionResponse" message="tns:AutenticacionResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarContrasena">
+      <wsdl:input wsaw:Action="urn:resinplast:seguridad:autenticacion:ActualizarContrasena" name="UsuariosRequest" message="tns:UsuariosRequest" />
+      <wsdl:output wsaw:Action="" name="UsuariosResponse" message="tns:UsuariosResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IAutenticacion" type="tns:IAutenticacion">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListarPermisos">
+      <soap:operation soapAction="urn:resinplast:seguridad:autenticacion:ListarPermisos" style="document" />
+      <wsdl:input name="AutenticacionRequest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AutenticacionResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarUsuarioPermisos">
+      <soap:operation soapAction="urn:resinplast:seguridad:autenticacion:ListarUsuarioPermisos" style="document" />
+      <wsdl:input name="AutenticacionRequest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AutenticacionResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarContrasena">
+      <soap:operation soapAction="urn:resinplast:seguridad:autenticacion:ActualizarContrasena" style="document" />
+      <wsdl:input name="UsuariosRequest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="UsuariosResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Autenticacion">
+    <wsdl:port name="BasicHttpBinding_IAutenticacion" binding="tns:BasicHttpBinding_IAutenticacion">
+      <soap:address location="http://localhost:56966/AutenticacionService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,194 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Resinplast.Indicadores.Implementation.Service
+</name>
+</assembly>
+<members>
+<member name="T:Resinplast.Indicadores.Implementation.Service.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Implementation.Service.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Resinplast.Indicadores.Implementation.Service.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:Resinplast.Indicadores.Implementation.Service.IDiseñoIndicadores.ListarAperturasDia(Resinplast.Indicadores.Wrapper.DiseñoIndicadoresAperturaRequest)">
+ <summary>
+ Lista IndicadoresKPI ListaAperturasDias
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Resinplast.Indicadores.Implementation.Service.IDiseñoIndicadores.ListarAperturasCompletadasSemana(Resinplast.Indicadores.Wrapper.DiseñoIndicadoresAperturaRequest)">
+ <summary>
+ Lista IndicadoresKPI ListaAperturasDias
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Resinplast.Indicadores.Implementation.Service.IDiseñoIndicadores.ListarAperturasSemana(Resinplast.Indicadores.Wrapper.DiseñoIndicadoresAperturaRequest)">
+ <summary>
+ Lista IndicadoresKPI ListaAperturasDias
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Resinplast.Indicadores.Implementation.Service.IDiseñoIndicadores.ListarAperturasDiaDetalle(Resinplast.Indicadores.Wrapper.DiseñoIndicadoresAperturaRequest)">
+ <summary>
+ Lista IndicadoresKPI ListaAperturasDias
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Resinplast.Indicadores.Implementation.Service.IDiseñoIndicadores.ListarAperturasCompletadasPorUsuario(Resinplast.Indicadores.Wrapper.DiseñoIndicadoresAperturaRequest)">
+ <summary>
+ Lista IndicadoresKPI ListaAperturasDias
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Resinplast.Indicadores.Implementation.Service.IDiseñoIndicadores.ListarPrepensaDia(Resinplast.Indicadores.Wrapper.DiseñoIndicadoresPreprensasRequest)">
+ <summary>
+ Lista IndicadoresKPI ListaPreprensasDias
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Resinplast.Indicadores.Implementation.Service.IDiseñoIndicadores.ListarPreprensaDiaDetalle(Resinplast.Indicadores.Wrapper.DiseñoIndicadoresPreprensasRequest)">
+ <summary>
+ Lista IndicadoresKPI ListaPreprensaDiasCliente
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Resinplast.Indicadores.Implementation.Service.IDiseñoIndicadores.ListarPreprensasSemana(Resinplast.Indicadores.Wrapper.DiseñoIndicadoresPreprensasRequest)">
+ <summary>
+ Lista IndicadoresKPI ListaPreprensasDias
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Resinplast.Indicadores.Implementation.Service.IDiseñoIndicadores.ListarPreprensasCompletadasSemana(Resinplast.Indicadores.Wrapper.DiseñoIndicadoresPreprensasRequest)">
+ <summary>
+ Lista IndicadoresKPI ListaPreprensasDias
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Resinplast.Indicadores.Implementation.Service.IDiseñoIndicadores.ListarPrepensaDiaPruebaColor(Resinplast.Indicadores.Wrapper.DiseñoIndicadoresPreprensasRequest)">
+ <summary>
+ Lista IndicadoresKPI ListaPreprensasDias
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Resinplast.Indicadores.Implementation.Service.IImpresionIndicadores.ListaIndicadoresSetUpIndividual(Resinplast.Indicadores.Wrapper.ImpresionIndicadoresSetUpRequest)">
+ <summary>
+ Lista Indicadores SetUp Individual
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Resinplast.Indicadores.Implementation.Service.IImpresionIndicadores.ListaIndicadoresSetUpTotal(Resinplast.Indicadores.Wrapper.ImpresionIndicadoresSetUpRequest)">
+ <summary>
+ Lista Indicadores SetUp Total
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Resinplast.Indicadores.Implementation.Service.IImpresionIndicadores.ListaIndicadoresSetUpConHeptacromia(Resinplast.Indicadores.Wrapper.ImpresionIndicadoresSetUpRequest)">
+ <summary>
+ Lista Indicadores SetUp Con Heptacromia
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Resinplast.Indicadores.Implementation.Service.IImpresionIndicadores.ListaIndicadoresSetUpSinHeptacromiaIndividual(Resinplast.Indicadores.Wrapper.ImpresionIndicadoresSetUpRequest)">
+ <summary>
+ Lista Indicadores SetUp Sin Heptacromia Individual
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Resinplast.Indicadores.Implementation.Service.IImpresionIndicadores.ListaIndicadoresSetUpSinHeptacromiaTotal(Resinplast.Indicadores.Wrapper.ImpresionIndicadoresSetUpRequest)">
+ <summary>
+ Lista Indicadores SetUp Sin HeptacromiaTotal
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Resinplast.Indicadores.Implementation.Service.IImpresionIndicadores.ListaIndicadoresMetrosIndividuales(Resinplast.Indicadores.Wrapper.ImpresionIndicadoresMetrosRequest)">
+ <summary>
+ Lista Indicadores Metros Individuales
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Resinplast.Indicadores.Implementation.Service.IImpresionIndicadores.ListaIndicadoresMetrosTotales(Resinplast.Indicadores.Wrapper.ImpresionIndicadoresMetrosRequest)">
+ <summary>
+ Lista Indicadores Metros Totales
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Resinplast.Indicadores.Implementation.Service.IImpresionIndicadores.ListaIndicadoresScrapIndividuales(Resinplast.Indicadores.Wrapper.ImpresionIndicadoresScrapRequest)">
+ <summary>
+Lista Indicadores Scrap Individuales
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Resinplast.Indicadores.Implementation.Service.IImpresionIndicadores.ListaIndicadoresScrapTotales(Resinplast.Indicadores.Wrapper.ImpresionIndicadoresScrapRequest)">
+ <summary>
+Lista Indicadores Scrap Totales
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Resinplast.Indicadores.Implementation.Service.IImpresionIndicadores.ListaIndicadoresVelocidadIndividuales(Resinplast.Indicadores.Wrapper.ImpresionIndicadoresVelocidadRequest)">
+ <summary>
+ Lista Indicadores Velocidad Individuales
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Resinplast.Indicadores.Implementation.Service.IImpresionIndicadores.ListaIndicadoresVelocidadTotales(Resinplast.Indicadores.Wrapper.ImpresionIndicadoresVelocidadRequest)">
+ <summary>
+ Lista Indicadores Velocidad Totales
+ </summary>
+ <param name="itemRequest"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

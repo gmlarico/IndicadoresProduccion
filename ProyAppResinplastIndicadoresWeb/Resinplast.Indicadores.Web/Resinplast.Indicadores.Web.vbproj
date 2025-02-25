@@ -1,0 +1,695 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D91B8D3D-8F60-4368-8E2F-9D3C8A12AEE9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Resinplast.Indicadores.Web</RootNamespace>
+    <AssemblyName>Resinplast.Indicadores.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Resinplast.Indicadores.Web.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Resinplast.Indicadores.Web.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.3.1.7705, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebGrease.1.1.0\lib\Antlr3.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.8.1.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.8.1\lib\net40\DocumentFormat.OpenXml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=4.4.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net40-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.11.0.0\lib\net20\Microsoft.SqlServer.Types.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.0\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.30506.0\lib\net40\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Providers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.2\lib\net40\System.Web.Providers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20715.0\lib\net40\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebGrease, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebGrease.1.1.0\lib\WebGrease.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.Mvc" />
+    <Import Include="System.Web.Mvc.Ajax" />
+    <Import Include="System.Web.Mvc.Html" />
+    <Import Include="System.Web.Routing" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.vb" />
+    <Compile Include="App_Start\FilterConfig.vb" />
+    <Compile Include="App_Start\RouteConfig.vb" />
+    <Compile Include="App_Start\WebApiConfig.vb" />
+    <Compile Include="Contexts\DisenoContext.vb" />
+    <Compile Include="Contexts\ImpresionContext.vb" />
+    <Compile Include="Controllers\DisenoController.vb" />
+    <Compile Include="Controllers\ErrorController.vb" />
+    <Compile Include="Controllers\ImpresionController.vb" />
+    <Compile Include="Controllers\IndicadoresController.vb" />
+    <Compile Include="Controllers\LoginController.vb" />
+    <Compile Include="Controllers\MantenimientoController.vb" />
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BaseModel.vb" />
+    <Compile Include="Models\Base\ButtonControl.vb" />
+    <Compile Include="Models\Base\Control.vb" />
+    <Compile Include="Models\Base\ControlPermissions.vb" />
+    <Compile Include="Models\Base\ImageControl.vb" />
+    <Compile Include="Models\Base\LinkControl.vb" />
+    <Compile Include="Models\Base\SelectType.vb" />
+    <Compile Include="Models\ErrorModel.vb" />
+    <Compile Include="Models\LoginModel.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Controllers\HomeController.vb" />
+    <Compile Include="Resources\EventoResource.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EventoResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\GeneralResource.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GeneralResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\MessageResource.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MessageResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\PizarraInternaResource.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PizarraInternaResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\DisenoIndicadoresService\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ImpresionIndicadoresService\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SeguridadService\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\EventoResource.resx">
+      <CustomToolNamespace>Resources</CustomToolNamespace>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EventoResource.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GeneralResource.resx">
+      <CustomToolNamespace>Resources</CustomToolNamespace>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>GeneralResource.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\MessageResource.resx">
+      <CustomToolNamespace>Resources</CustomToolNamespace>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>MessageResource.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\PizarraInternaResource.resx">
+      <CustomToolNamespace>Resources</CustomToolNamespace>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>PizarraInternaResource.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\assets\fonts\Code128\CODE-128.TTF" />
+    <Content Include="Content\assets\fonts\Code128\CODE128.TTF" />
+    <Content Include="Content\assets\fonts\fontawesome4\fontawesome-webfont.eot" />
+    <Content Include="Content\assets\fonts\fontawesome4\fontawesome-webfont.ttf" />
+    <Content Include="Content\assets\fonts\fontawesome4\fontawesome-webfont.woff" />
+    <Content Include="Content\assets\fonts\fontawesome4\fontawesome-webfont.woff2" />
+    <Content Include="Content\assets\fonts\fontawesome4\FontAwesome.otf" />
+    <Content Include="Content\assets\fonts\fontawesome4\Simple-Line-Icons.eot" />
+    <Content Include="Content\assets\fonts\fontawesome4\Simple-Line-Icons.ttf" />
+    <Content Include="Content\assets\fonts\fontawesome4\Simple-Line-Icons.woff2" />
+    <Content Include="Content\assets\fonts\fontawesome5\fa-brands-400.eot" />
+    <Content Include="Content\assets\fonts\fontawesome5\fa-brands-400.ttf" />
+    <Content Include="Content\assets\fonts\fontawesome5\fa-brands-400.woff" />
+    <Content Include="Content\assets\fonts\fontawesome5\fa-brands-400.woff2" />
+    <Content Include="Content\assets\fonts\fontawesome5\fa-regular-400.eot" />
+    <Content Include="Content\assets\fonts\fontawesome5\fa-regular-400.ttf" />
+    <Content Include="Content\assets\fonts\fontawesome5\fa-regular-400.woff" />
+    <Content Include="Content\assets\fonts\fontawesome5\fa-regular-400.woff2" />
+    <Content Include="Content\assets\fonts\fontawesome5\fa-solid-900.eot" />
+    <Content Include="Content\assets\fonts\fontawesome5\fa-solid-900.ttf" />
+    <Content Include="Content\assets\fonts\fontawesome5\fa-solid-900.woff" />
+    <Content Include="Content\assets\fonts\fontawesome5\fa-solid-900.woff2" />
+    <Content Include="Content\assets\fonts\fontawesome5\fontawesome-webfont.eot" />
+    <Content Include="Content\assets\fonts\fontawesome5\fontawesome-webfont.woff2" />
+    <Content Include="Content\assets\fonts\fontawesome5\Simple-Line-Icons.eot" />
+    <Content Include="Content\assets\fonts\fontawesome5\Simple-Line-Icons.ttf" />
+    <Content Include="Content\assets\fonts\fontawesome5\Simple-Line-Icons.woff2" />
+    <Content Include="Content\assets\fonts\simple-line-icons\fontawesome-webfont.eot" />
+    <Content Include="Content\assets\fonts\simple-line-icons\fontawesome-webfont.woff2" />
+    <Content Include="Content\assets\fonts\simple-line-icons\Simple-Line-Icons.eot" />
+    <Content Include="Content\assets\fonts\simple-line-icons\Simple-Line-Icons.ttf" />
+    <Content Include="Content\assets\fonts\simple-line-icons\Simple-Line-Icons.woff" />
+    <Content Include="Content\assets\fonts\simple-line-icons\Simple-Line-Icons.woff2" />
+    <Content Include="Content\Plugins\Datepicker3.css.map" />
+    <Content Include="Fonts\Code128\CODE-128.TTF" />
+    <Content Include="Fonts\Code128\CODE128.TTF" />
+    <Content Include="Fonts\fontawesome-webfont.eot" />
+    <Content Include="Fonts\fontawesome-webfont.woff2" />
+    <Content Include="Fonts\Simple-Line-Icons.eot" />
+    <Content Include="Fonts\Simple-Line-Icons.ttf" />
+    <Content Include="Fonts\Simple-Line-Icons.woff2" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Content\assets\css\codebase.css" />
+    <Content Include="Content\assets\css\codebase.min.css" />
+    <Content Include="Content\assets\css\MenuLateral.css" />
+    <Content Include="Content\assets\css\OtrosEfectos.css" />
+    <Content Include="Content\assets\css\themes\corporate.css" />
+    <Content Include="Content\assets\css\themes\corporate.min.css" />
+    <Content Include="Content\assets\css\themes\earth.css" />
+    <Content Include="Content\assets\css\themes\earth.min.css" />
+    <Content Include="Content\assets\css\themes\elegance.css" />
+    <Content Include="Content\assets\css\themes\elegance.min.css" />
+    <Content Include="Content\assets\css\themes\flat.css" />
+    <Content Include="Content\assets\css\themes\flat.min.css" />
+    <Content Include="Content\assets\css\themes\pulse.css" />
+    <Content Include="Content\assets\css\themes\pulse.min.css" />
+    <Content Include="Content\assets\fonts\fontawesome4\fontawesome-webfont.svg" />
+    <Content Include="Content\assets\fonts\fontawesome5\fa-brands-400.svg" />
+    <Content Include="Content\assets\fonts\fontawesome5\fa-regular-400.svg" />
+    <Content Include="Content\assets\fonts\fontawesome5\fa-solid-900.svg" />
+    <Content Include="Content\assets\fonts\simple-line-icons\Simple-Line-Icons.svg" />
+    <Content Include="Content\assets\js\codebase.app.min.js" />
+    <Content Include="Content\assets\js\codebase.core.min.js" />
+    <Content Include="Content\assets\js\core\bootstrap.bundle.min.js" />
+    <Content Include="Content\assets\js\core\jquery-scrollLock.min.js" />
+    <Content Include="Content\assets\js\core\jquery.appear.min.js" />
+    <Content Include="Content\assets\js\core\jquery.countTo.min.js" />
+    <Content Include="Content\assets\js\core\jquery.min.js" />
+    <Content Include="Content\assets\js\core\js.cookie.min.js" />
+    <Content Include="Content\assets\js\core\simplebar.min.js" />
+    <Content Include="Content\assets\js\pages\op_auth_signin.min.js" />
+    <Content Include="Content\assets\js\plugins\jquery-validation\jquery.validate.js" />
+    <Content Include="Content\assets\js\plugins\jquery-validation\jquery.validate.min.js" />
+    <Content Include="Content\assets\js\plugins\nestable2\jquery.nestable.min.js" />
+    <Content Include="Content\assets\media\avatars\avatar0.jpg" />
+    <Content Include="Content\assets\media\avatars\avatar1.jpg" />
+    <Content Include="Content\assets\media\avatars\avatar10.jpg" />
+    <Content Include="Content\assets\media\avatars\avatar11.jpg" />
+    <Content Include="Content\assets\media\avatars\avatar12.jpg" />
+    <Content Include="Content\assets\media\avatars\avatar13.jpg" />
+    <Content Include="Content\assets\media\avatars\avatar14.jpg" />
+    <Content Include="Content\assets\media\avatars\avatar15.jpg" />
+    <Content Include="Content\assets\media\avatars\avatar16.jpg" />
+    <Content Include="Content\assets\media\avatars\avatar2.jpg" />
+    <Content Include="Content\assets\media\avatars\avatar3.jpg" />
+    <Content Include="Content\assets\media\avatars\avatar4.jpg" />
+    <Content Include="Content\assets\media\avatars\avatar5.jpg" />
+    <Content Include="Content\assets\media\avatars\avatar6.jpg" />
+    <Content Include="Content\assets\media\avatars\avatar7.jpg" />
+    <Content Include="Content\assets\media\avatars\avatar8.jpg" />
+    <Content Include="Content\assets\media\avatars\avatar9.jpg" />
+    <Content Include="Content\assets\media\avatars\readme.txt" />
+    <Content Include="Content\assets\media\favicons\apple-touch-icon-180x180.png" />
+    <Content Include="Content\assets\media\favicons\favicon-192x192.png" />
+    <Content Include="Content\assets\media\favicons\favicon.png" />
+    <Content Include="Content\assets\media\favicons\ResinplastLogo.jpg" />
+    <Content Include="Content\codebase.css" />
+    <Content Include="Content\images\ui-icons_444444_256x240.png" />
+    <Content Include="Content\images\ui-icons_555555_256x240.png" />
+    <Content Include="Content\images\ui-icons_777620_256x240.png" />
+    <Content Include="Content\images\ui-icons_777777_256x240.png" />
+    <Content Include="Content\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="Content\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Content\jquery-ui.css" />
+    <Content Include="Content\main.css" />
+    <Content Include="Content\Plugins\apex\apexcharts.css" />
+    <Content Include="Content\Plugins\apex\apexcharts.min.js" />
+    <Content Include="Content\Plugins\apex\custom-apexchart2.js" />
+    <Content Include="Content\Plugins\apex\custom-apexcharts.js" />
+    <Content Include="Content\Plugins\dataTables.bootstrap4.css" />
+    <Content Include="Content\Plugins\Datepicker3.css" />
+    <Content Include="Content\Plugins\Datetimepicker.css" />
+    <Content Include="Content\Plugins\Dialog.css" />
+    <Content Include="Content\Plugins\jquery.nestable.min.css" />
+    <Content Include="Content\Plugins\Nestable.css" />
+    <Content Include="Content\Plugins\ProgressBar.css" />
+    <Content Include="Content\Plugins\SlickGrid.css" />
+    <Content Include="Content\Plugins\Sweetalert2.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\Specials\Dropzone\basic.css" />
+    <Content Include="Content\Specials\Dropzone\dropzone.css" />
+    <Content Include="Content\Specials\Select2\select2.css" />
+    <Content Include="Content\Specials\Select2\select2Bootstrap.css" />
+    <Content Include="Content\themes\base\accordion.css" />
+    <Content Include="Content\themes\base\all.css" />
+    <Content Include="Content\themes\base\autocomplete.css" />
+    <Content Include="Content\themes\base\base.css" />
+    <Content Include="Content\themes\base\button.css" />
+    <Content Include="Content\themes\base\core.css" />
+    <Content Include="Content\themes\base\datepicker.css" />
+    <Content Include="Content\themes\base\dialog.css" />
+    <Content Include="Content\themes\base\draggable.css" />
+    <Content Include="Content\themes\base\images\ui-icons_444444_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_555555_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_777620_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_777777_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\menu.css" />
+    <Content Include="Content\themes\base\progressbar.css" />
+    <Content Include="Content\themes\base\resizable.css" />
+    <Content Include="Content\themes\base\selectable.css" />
+    <Content Include="Content\themes\base\selectmenu.css" />
+    <Content Include="Content\themes\base\slider.css" />
+    <Content Include="Content\themes\base\sortable.css" />
+    <Content Include="Content\themes\base\spinner.css" />
+    <Content Include="Content\themes\base\tabs.css" />
+    <Content Include="Content\themes\base\theme.css" />
+    <Content Include="Content\themes\base\tooltip.css" />
+    <Content Include="Imagenes\General\CheckAprobacion.png" />
+    <Content Include="Imagenes\General\CheckAprobacionCliente.png" />
+    <Content Include="Imagenes\General\LOGO_RESI.PNG" />
+    <Content Include="Imagenes\General\Resinplast.png" />
+    <Content Include="Imagenes\Login\FondoWebResinplast.jpg" />
+    <Content Include="Imagenes\Login\fotos-slider-2.jpg" />
+    <Content Include="Imagenes\Login\resinplast_production.jpg" />
+    <Content Include="Scripts\Components\AjaxUtil\ajaxUtil.js" />
+    <Content Include="Scripts\Components\Calendar\calendar.js" />
+    <Content Include="Scripts\Components\Date\moment.js" />
+    <Content Include="Scripts\Components\Dialog\dialog.js" />
+    <Content Include="Scripts\Components\Grid\grid.js" />
+    <Content Include="Scripts\Components\Message\message.js" />
+    <Content Include="Scripts\Components\ProgressBar\progressBar.js" />
+    <Content Include="Scripts\Components\Storage\storage.js" />
+    <Content Include="Scripts\Components\Validator\validator.js" />
+    <Content Include="Scripts\Core\bootstrap.bundle.js" />
+    <Content Include="Scripts\Core\codebase.js" />
+    <Content Include="Scripts\Core\jquery-ui.js" />
+    <Content Include="Scripts\Core\jquery.appear.js" />
+    <Content Include="Scripts\Core\jquery.browser.js" />
+    <Content Include="Scripts\Core\jquery.countTo.js" />
+    <Content Include="Scripts\Core\jquery.event.drag-2.3.0.js" />
+    <Content Include="Scripts\Core\jquery.js" />
+    <Content Include="Scripts\Core\jquery.scrollLock.js" />
+    <Content Include="Scripts\Core\jquery.slimscroll.js" />
+    <Content Include="Scripts\Core\js.cookie.js" />
+    <Content Include="Scripts\Core\moment.js" />
+    <Content Include="Scripts\master.js" />
+    <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\ns.js" />
+    <Content Include="Scripts\pages\be_comp_nestable.min.js" />
+    <Content Include="Scripts\pages\be_tables_datatables.min.js" />
+    <Content Include="Scripts\Plugins\datatables\be_tables_datatables.min.js" />
+    <Content Include="Scripts\Plugins\datatables\buttons-bs4\buttons.bootstrap4.css" />
+    <Content Include="Scripts\Plugins\datatables\buttons-bs4\buttons.bootstrap4.js" />
+    <Content Include="Scripts\Plugins\datatables\buttons-bs4\buttons.bootstrap4.min.css" />
+    <Content Include="Scripts\Plugins\datatables\buttons-bs4\buttons.bootstrap4.min.js" />
+    <Content Include="Scripts\Plugins\datatables\buttons\buttons.colVis.js" />
+    <Content Include="Scripts\Plugins\datatables\buttons\buttons.colVis.min.js" />
+    <Content Include="Scripts\Plugins\datatables\buttons\buttons.flash.js" />
+    <Content Include="Scripts\Plugins\datatables\buttons\buttons.flash.min.js" />
+    <Content Include="Scripts\Plugins\datatables\buttons\buttons.html5.js" />
+    <Content Include="Scripts\Plugins\datatables\buttons\buttons.html5.min.js" />
+    <Content Include="Scripts\Plugins\datatables\buttons\buttons.print.js" />
+    <Content Include="Scripts\Plugins\datatables\buttons\buttons.print.min.js" />
+    <Content Include="Scripts\Plugins\datatables\buttons\dataTables.buttons.js" />
+    <Content Include="Scripts\Plugins\datatables\buttons\dataTables.buttons.min.js" />
+    <Content Include="Scripts\Plugins\datatables\dataTables.bootstrap4.min.js" />
+    <Content Include="Scripts\Plugins\datatables\jquery.dataTables.min.js" />
+    <Content Include="Scripts\Plugins\Datepicker\jquery.bootstrap.datepicker.js" />
+    <Content Include="Scripts\Plugins\Datepicker\jquery.bootstrap.datepicker.min.js" />
+    <Content Include="Scripts\Plugins\Datepicker\jquery.bootstrap.datetimepicker.js" />
+    <Content Include="Scripts\Plugins\Datepicker\locales\es.js" />
+    <Content Include="Scripts\Plugins\Dropzone\dropzone.js" />
+    <Content Include="Scripts\Plugins\Knockout\knockout.debug.js" />
+    <Content Include="Scripts\Plugins\Knockout\knockout.js" />
+    <Content Include="Scripts\Plugins\nestable2\jquery.nestable.js" />
+    <Content Include="Scripts\Plugins\nestable2\jquery.nestable.min.css" />
+    <Content Include="Scripts\Plugins\nestable2\jquery.nestable.min.js" />
+    <Content Include="Scripts\Plugins\Select2\i18n\en.js" />
+    <Content Include="Scripts\Plugins\Select2\i18n\es.js" />
+    <Content Include="Scripts\Plugins\Select2\select2.full.js" />
+    <Content Include="Scripts\Plugins\Select2\select2.full.min.js" />
+    <Content Include="Scripts\Plugins\SlickGrid\firebugx.js" />
+    <Content Include="Scripts\Plugins\SlickGrid\slick.autocolumnsize.js" />
+    <Content Include="Scripts\Plugins\SlickGrid\slick.autotooltips.js" />
+    <Content Include="Scripts\Plugins\SlickGrid\slick.cellcopymanager.js" />
+    <Content Include="Scripts\Plugins\SlickGrid\slick.cellexternalcopymanager.js" />
+    <Content Include="Scripts\Plugins\SlickGrid\slick.cellrangedecorator.js" />
+    <Content Include="Scripts\Plugins\SlickGrid\slick.cellrangeselector.js" />
+    <Content Include="Scripts\Plugins\SlickGrid\slick.cellselectionmodel.js" />
+    <Content Include="Scripts\Plugins\SlickGrid\slick.checkboxselectcolumn.js" />
+    <Content Include="Scripts\Plugins\SlickGrid\slick.columnpicker.js" />
+    <Content Include="Scripts\Plugins\SlickGrid\slick.compositeeditor.js" />
+    <Content Include="Scripts\Plugins\SlickGrid\slick.core.js" />
+    <Content Include="Scripts\Plugins\SlickGrid\slick.dataview.js" />
+    <Content Include="Scripts\Plugins\SlickGrid\slick.draggablegrouping.js" />
+    <Content Include="Scripts\Plugins\SlickGrid\slick.editors.js" />
+    <Content Include="Scripts\Plugins\SlickGrid\slick.formatters.js" />
+    <Content Include="Scripts\Plugins\SlickGrid\slick.grid.js" />
+    <Content Include="Scripts\Plugins\SlickGrid\slick.gridmenu.js" />
+    <Content Include="Scripts\Plugins\SlickGrid\slick.groupitemmetadataprovider.js" />
+    <Content Include="Scripts\Plugins\SlickGrid\slick.headerbuttons.js" />
+    <Content Include="Scripts\Plugins\SlickGrid\slick.headermenu.js" />
+    <Content Include="Scripts\Plugins\SlickGrid\slick.pager.js" />
+    <Content Include="Scripts\Plugins\SlickGrid\slick.radioselectcolumn.js" />
+    <Content Include="Scripts\Plugins\SlickGrid\slick.remotemodel-yahoo.js" />
+    <Content Include="Scripts\Plugins\SlickGrid\slick.remotemodel.js" />
+    <Content Include="Scripts\Plugins\SlickGrid\slick.rowdetailview.js" />
+    <Content Include="Scripts\Plugins\SlickGrid\slick.rowmovemanager.js" />
+    <Content Include="Scripts\Plugins\SlickGrid\slick.rowselectionmodel.js" />
+    <Content Include="Scripts\Plugins\Sweetalert2\sweetalert2.js" />
+    <Content Include="Scripts\Plugins\Sweetalert2\sweetalert2.min.js" />
+    <Content Include="Scripts\Plugins\Validation\jquery.validate.js" />
+    <Content Include="Scripts\Plugins\Validation\jquery.validate.min.js" />
+    <Content Include="Scripts\Plugins\Validation\localization\messages_en.js" />
+    <Content Include="Scripts\Plugins\Validation\localization\messages_es.js" />
+    <Content Include="Scripts\Plugins\Wizard\jquery.bootstrap.wizard.js" />
+    <Content Include="Scripts\Plugins\Wizard\jquery.bootstrap.wizard.min.js" />
+    <Content Include="Scripts\View\Diseno\DisenoIndicadores.js" />
+    <Content Include="Scripts\View\Home\Controller.js" />
+    <Content Include="Scripts\View\Home\Index.js" />
+    <Content Include="Scripts\View\Impresion\ImpresionIndicadores.js" />
+    <Content Include="Scripts\View\Layout\Controller.js" />
+    <Content Include="Scripts\View\Layout\Index.js" />
+    <Content Include="Scripts\View\Login\Controller.js" />
+    <Content Include="Scripts\View\Login\Index.js" />
+    <Content Include="packages.config" />
+    <None Include="Scripts\_references.js" />
+    <None Include="Service References\DisenoIndicadoresService\DiseñoIndicadores.wsdl" />
+    <None Include="Service References\ImpresionIndicadoresService\ImpresionIndicadores.wsdl" />
+    <None Include="Service References\SeguridadService\Autenticacion1.wsdl" />
+    <None Include="Service References\SeguridadService\configuration91.svcinfo" />
+    <None Include="Service References\SeguridadService\configuration.svcinfo" />
+    <None Include="Service References\SeguridadService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Service References\ImpresionIndicadoresService\configuration91.svcinfo" />
+    <None Include="Service References\ImpresionIndicadoresService\configuration.svcinfo" />
+    <None Include="Service References\ImpresionIndicadoresService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <Content Include="Scripts\View\Mantenimiento\CambioContraseña.js" />
+    <None Include="Service References\DisenoIndicadoresService\configuration91.svcinfo" />
+    <None Include="Service References\DisenoIndicadoresService\configuration.svcinfo" />
+    <None Include="Service References\DisenoIndicadoresService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial110.dll" />
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial110.dll" />
+    <Content Include="Views\Shared\Lockout.vbhtml" />
+    <Content Include="Views\Shared\_LoginPartial.vbhtml" />
+    <Content Include="Service References\SeguridadService\Resinplast.Indicadores.Web.SeguridadService.AutenticacionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Views\Login\Index.vbhtml" />
+    <Content Include="Views\Impresion\General.vbhtml" />
+    <Content Include="Views\Impresion\Index.vbhtml" />
+    <Content Include="Views\Shared\_BaseLayout.vbhtml" />
+    <Content Include="Views\Error\ErrorApplication.vbhtml" />
+    <Content Include="Views\Error\GatewayTimeout.vbhtml" />
+    <Content Include="Views\Error\NotFound.vbhtml" />
+    <Content Include="Views\Error\NotSession.vbhtml" />
+    <Content Include="Views\Mantenimiento\CambioContraseña.vbhtml" />
+    <Content Include="Views\Shared\_MantenimientoLayout.vbhtml" />
+    <Content Include="Views\Indicadores\Index.vbhtml" />
+    <Content Include="Views\Diseno\Index.vbhtml" />
+    <Content Include="Views\Diseno\General.vbhtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\_ViewStart.vbhtml" />
+    <Content Include="Views\Home\About.vbhtml" />
+    <Content Include="Views\Home\Contact.vbhtml" />
+    <Content Include="Views\Home\Index.vbhtml" />
+    <Content Include="Views\Shared\Error.vbhtml" />
+    <Content Include="Views\Shared\_Layout.vbhtml" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Scripts\View\Cancelar\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Resinplast.Indicadores.Utils\Resinplast.Indicadores.Utils.vbproj">
+      <Project>{a44c4d5c-bedb-42fe-bda9-4fbaa50aa94b}</Project>
+      <Name>Resinplast.Indicadores.Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Resinplast.Indicadores.Wrapper\Resinplast.Indicadores.Wrapper.vbproj">
+      <Project>{f0358504-dbd7-47ea-945e-9d8b614117f3}</Project>
+      <Name>Resinplast.Indicadores.Wrapper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\DisenoIndicadoresService\" />
+    <WCFMetadataStorage Include="Service References\ImpresionIndicadoresService\" />
+    <WCFMetadataStorage Include="Service References\SeguridadService\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>30465</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:30465/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

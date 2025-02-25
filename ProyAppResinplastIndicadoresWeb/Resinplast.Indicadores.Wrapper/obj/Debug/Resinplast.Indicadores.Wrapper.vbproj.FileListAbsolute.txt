@@ -1,0 +1,12 @@
+C:\Users\GLARICO\Documents\Visual Studio 2015\Projects\ProyAppResinplastIndicadoresWeb\Resinplast.Indicadores.Wrapper\bin\Debug\Resinplast.Indicadores.Wrapper.dll
+C:\Users\GLARICO\Documents\Visual Studio 2015\Projects\ProyAppResinplastIndicadoresWeb\Resinplast.Indicadores.Wrapper\bin\Debug\Resinplast.Indicadores.Wrapper.pdb
+C:\Users\GLARICO\Documents\Visual Studio 2015\Projects\ProyAppResinplastIndicadoresWeb\Resinplast.Indicadores.Wrapper\bin\Debug\Resinplast.Indicadores.Wrapper.xml
+C:\Users\GLARICO\Documents\Visual Studio 2015\Projects\ProyAppResinplastIndicadoresWeb\Resinplast.Indicadores.Wrapper\bin\Debug\System.Net.Http.dll
+C:\Users\GLARICO\Documents\Visual Studio 2015\Projects\ProyAppResinplastIndicadoresWeb\Resinplast.Indicadores.Wrapper\bin\Debug\System.Net.Http.xml
+C:\Users\GLARICO\Documents\Visual Studio 2015\Projects\ProyAppResinplastIndicadoresWeb\Resinplast.Indicadores.Wrapper\bin\Debug\es\System.Net.Http.resources.dll
+C:\Users\GLARICO\Documents\Visual Studio 2015\Projects\ProyAppResinplastIndicadoresWeb\Resinplast.Indicadores.Wrapper\obj\Debug\Resinplast.Indicadores.Wrapper.Resources.resources
+C:\Users\GLARICO\Documents\Visual Studio 2015\Projects\ProyAppResinplastIndicadoresWeb\Resinplast.Indicadores.Wrapper\obj\Debug\Resinplast.Indicadores.Wrapper.vbproj.GenerateResource.Cache
+C:\Users\GLARICO\Documents\Visual Studio 2015\Projects\ProyAppResinplastIndicadoresWeb\Resinplast.Indicadores.Wrapper\obj\Debug\Resinplast.Indicadores.Wrapper.dll
+C:\Users\GLARICO\Documents\Visual Studio 2015\Projects\ProyAppResinplastIndicadoresWeb\Resinplast.Indicadores.Wrapper\obj\Debug\Resinplast.Indicadores.Wrapper.xml
+C:\Users\GLARICO\Documents\Visual Studio 2015\Projects\ProyAppResinplastIndicadoresWeb\Resinplast.Indicadores.Wrapper\obj\Debug\Resinplast.Indicadores.Wrapper.pdb
+C:\Users\GLARICO\Documents\Visual Studio 2015\Projects\ProyAppResinplastIndicadoresWeb\Resinplast.Indicadores.Wrapper\obj\Debug\Resinplast.Indicadores.Wrapper.vbprojResolveAssemblyReference.cache
